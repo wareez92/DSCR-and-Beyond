@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import Loans from "./Loans";
 
-function Home() {
+function Home({ testimonials }) {
   return (
     <>
       {/* Hero Section */}
@@ -32,7 +32,10 @@ function Home() {
         <h1>Loan Programs</h1>
         <div>
           <div>
-            <img src="src/assets/222 W Chestnut Ave - Califonia - Funded.pdf" alt="icon" />
+            <img
+              src="src/assets/222 W Chestnut Ave - Califonia - Funded.pdf"
+              alt="icon"
+            />
             <hr></hr>
             <h6>Name</h6>
             <p>info</p>
@@ -49,7 +52,7 @@ function Home() {
         <h1> Portfolio</h1>
         <div>
           <div>
-          <img src=""/>
+            <img src="null" />
             <h6>Name of Home</h6>
             <p>Date</p>
           </div>
@@ -64,11 +67,17 @@ function Home() {
       <section>
         <h1>Testimonials</h1>
         <div>
-          <img src="" alt="icon" />
-          <p>experience</p>
-          <h6>Client Name</h6>
-        </div>
+          {testimonials.slice(0, 4)
+            .map((t, index) => (
+              <div key={index}>
+                <h3>{t.name}</h3>
+                <p>{"⭐".repeat(t.rating)}</p>
+                <p>{t.review}</p>
+              </div>
 
+            ))}
+        </div>
+``
         <Link to="/Testimonials">View All</Link>
       </section>
 
@@ -95,7 +104,6 @@ function Home() {
           <input type="submit"></input>
         </form>
       </section>
-
     </>
   );
 }

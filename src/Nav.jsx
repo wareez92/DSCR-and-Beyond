@@ -3,7 +3,7 @@ import { Link } from "react-router";
 function Nav() {
   return (
     <>
-      <img src="" alt="logo" />
+      <img src="null" alt="logo" />
 
       <h5>DSCR and Beyond</h5>
 
