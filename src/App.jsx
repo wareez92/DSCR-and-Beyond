@@ -53,7 +53,7 @@ function App() {
 
   const loanPrograms = [
     {
-      name: "DSCR 1-4 Unit",
+      loanName: "DSCR 1-4 Unit",
       icon: "null",
       keyFeatures: [
         "No Personal Income Verification",
@@ -65,7 +65,7 @@ function App() {
         "A DSCR (Debt Service Coverage Ratio) loan is designed for real estate investors purchasing or refinancing rental properties with 1–4 units. Instead of relying on personal income, these loans focus on the property’s cash flow to qualify. If the rental income covers the property's monthly debt payments, you may qualify—even without traditional income documentation. DSCR loans offer a flexible, streamlined solution for building your investment portfolio.",
     },
     {
-      name: "DSCR 5-8 Unit",
+      loanName: "DSCR 5-8 Unit",
       icon: "null",
       keyFeatures: [
         "Income-Based Qualification",
@@ -77,7 +77,7 @@ function App() {
         "DSCR (Debt Service Coverage Ratio) loans for 5–8 unit properties are designed for investors looking to finance mid-sized residential properties. These loans rely on the property's rental income to qualify, rather than personal income or tax returns. Whether you're expanding your portfolio or refinancing existing assets, DSCR loans offer a flexible, cash-flow-based solution with a streamlined approval process.",
     },
     {
-      name: "DSCR Alt Doc",
+      loanName: "DSCR Alt Doc",
       icon: "null",
       keyFeatures: [
         "Alternative Documentation Accepted",
@@ -89,7 +89,7 @@ function App() {
         "DSCR Alt Doc (Alternative Documentation) loans are designed for real estate investors who may not qualify through traditional income documentation. These loans focus on the property's rental income and overall cash flow, not the borrower’s tax returns or employment history. By using alternative forms of documentation, investors can access flexible financing options for both residential and small multifamily properties.",
     },
     {
-      name: "DSCR ITIN",
+      loanName: "DSCR ITIN",
       icon: "null",
       keyFeatures: [
         "No Social Security Number Required",
@@ -101,7 +101,7 @@ function App() {
         "DSCR ITIN loans are tailored for real estate investors who do not have a Social Security Number but hold an ITIN (Individual Taxpayer Identification Number). These loans use the property's rental income—not the borrower's personal income—to determine eligibility. With no need for traditional income documentation, DSCR ITIN loans provide a streamlined path to property ownership for non-U.S. citizens investing in 1–8 unit residential properties.",
     },
     {
-      name: "DSCR Foreign National",
+      loanName: "DSCR Foreign National",
       icon: "null",
       keyFeatures: [
         "No Social Security Number Required",
@@ -118,7 +118,12 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home testimonials={testimonials} />} />
+        <Route
+          path="/"
+          element={
+            <Home testimonials={testimonials} loanPrograms={loanPrograms} />
+          }
+        />
         <Route path="/Loans" element={<Loans />} />
         <Route
           path="/Testimonials"

@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import Loans from "./Loans";
 
-function Home({ testimonials }) {
+function Home({ testimonials, loanPrograms }) {
   return (
     <>
       {/* Hero Section */}
@@ -31,15 +31,22 @@ function Home({ testimonials }) {
       <section>
         <h1>Loan Programs</h1>
         <div>
-          <div>
-            <img
-              src="src/assets/222 W Chestnut Ave - Califonia - Funded.pdf"
-              alt="icon"
-            />
-            <hr></hr>
-            <h6>Name</h6>
-            <p>info</p>
-          </div>
+          {loanPrograms.slice(0, 4).map((l, i) => (
+            <div key={i}>
+              <img
+                src="src/assets/222 W Chestnut Ave - Califonia - Funded.pdf"
+                alt="icon"
+              />
+              <h4>{l.loanName}</h4>
+              <section>
+                <ul>
+                  {l.keyFeatures.map((f, i) => (
+                    <li key={i}>{f}</li>
+                  ))}
+                </ul>
+              </section>
+            </div>
+          ))}
         </div>
         <Link to="/Loans">View All</Link>
       </section>
@@ -67,17 +74,15 @@ function Home({ testimonials }) {
       <section>
         <h1>Testimonials</h1>
         <div>
-          {testimonials.slice(0, 4)
-            .map((t, index) => (
-              <div key={index}>
-                <h3>{t.name}</h3>
-                <p>{"⭐".repeat(t.rating)}</p>
-                <p>{t.review}</p>
-              </div>
-
-            ))}
+          {testimonials.slice(0, 4).map((t, index) => (
+            <div key={index}>
+              <h3>{t.name}</h3>
+              <p>{"⭐".repeat(t.rating)}</p>
+              <p>{t.review}</p>
+            </div>
+          ))}
         </div>
-``
+        ``
         <Link to="/Testimonials">View All</Link>
       </section>
 
