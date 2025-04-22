@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import { BrowserRouter, Route, Routes } from "react-router";
+import SingleLoan from "./SingleLoan";
 
 function App() {
   const testimonials = [
@@ -53,18 +54,20 @@ function App() {
 
   const loanPrograms = [
     {
+      loanId: "1",
       loanName: "DSCR 1-4 Unit",
       icon: "null",
       keyFeatures: [
         "No Personal Income Verification",
         "Ideal for Real Estate Investors",
         "Covers 1–4 Unit Properties",
-        "Fast and Streamlined Approval",
+        "Fast & Streamlined Approval",
       ],
       description:
         "A DSCR (Debt Service Coverage Ratio) loan is designed for real estate investors purchasing or refinancing rental properties with 1–4 units. Instead of relying on personal income, these loans focus on the property’s cash flow to qualify. If the rental income covers the property's monthly debt payments, you may qualify—even without traditional income documentation. DSCR loans offer a flexible, streamlined solution for building your investment portfolio.",
     },
     {
+      loanId: "2",
       loanName: "DSCR 5-8 Unit",
       icon: "null",
       keyFeatures: [
@@ -77,18 +80,20 @@ function App() {
         "DSCR (Debt Service Coverage Ratio) loans for 5–8 unit properties are designed for investors looking to finance mid-sized residential properties. These loans rely on the property's rental income to qualify, rather than personal income or tax returns. Whether you're expanding your portfolio or refinancing existing assets, DSCR loans offer a flexible, cash-flow-based solution with a streamlined approval process.",
     },
     {
+      loanId: "3",
       loanName: "DSCR Alt Doc",
       icon: "null",
       keyFeatures: [
         "Alternative Documentation Accepted",
         "Ideal for Self-Employed Investors",
         "Covers 1–4 Unit Properties",
-        "Fast, Flexible Financing",
+        "Fast & Flexible Financing",
       ],
       description:
         "DSCR Alt Doc (Alternative Documentation) loans are designed for real estate investors who may not qualify through traditional income documentation. These loans focus on the property's rental income and overall cash flow, not the borrower’s tax returns or employment history. By using alternative forms of documentation, investors can access flexible financing options for both residential and small multifamily properties.",
     },
     {
+      loanId: "4",
       loanName: "DSCR ITIN",
       icon: "null",
       keyFeatures: [
@@ -101,6 +106,7 @@ function App() {
         "DSCR ITIN loans are tailored for real estate investors who do not have a Social Security Number but hold an ITIN (Individual Taxpayer Identification Number). These loans use the property's rental income—not the borrower's personal income—to determine eligibility. With no need for traditional income documentation, DSCR ITIN loans provide a streamlined path to property ownership for non-U.S. citizens investing in 1–8 unit residential properties.",
     },
     {
+      loanId: "5",
       loanName: "DSCR Foreign National",
       icon: "null",
       keyFeatures: [
@@ -124,13 +130,17 @@ function App() {
             <Home testimonials={testimonials} loanPrograms={loanPrograms} />
           }
         />
-        <Route path="/Loans" element={<Loans />} />
+        <Route path="/loans" element={<Loans loanPrograms={loanPrograms} />} />
         <Route
           path="/Testimonials"
           element={<Testimonials testimonials={testimonials} />}
         />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route
+          path="/loans/:loanId"
+          element={<SingleLoan loanPrograms={loanPrograms} />}
+        />
       </Routes>
       <Footer />
     </>

@@ -44,6 +44,7 @@ function Home({ testimonials, loanPrograms }) {
                     <li key={i}>{f}</li>
                   ))}
                 </ul>
+                <Link to={`/loans/${l.loanId}`}>View Details</Link>
               </section>
             </div>
           ))}
