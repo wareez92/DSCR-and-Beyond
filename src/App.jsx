@@ -120,6 +120,36 @@ function App() {
     },
   ];
 
+  const portfolioItems = [
+    {
+      portId: "1",
+      portName: "1508 De La Vina",
+      portAddress: "1508 De La Vina St, Santa Barbara, CA 93101",
+      portImage: "https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp",
+      portImage2: "https://photos.zillowstatic.com/fp/4e9e6ceab8eebed003b7a39777282cb5-cc_ft_576.webp",
+      portImage3: "https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp",
+      portDescription: "This is a description",
+    },
+    {
+      portId: "2",
+      portName: "222 W Chestnut Ave",
+      portAddress: "222 W Chestnut Ave, Lompoc, CA 93436",
+      portImage: "https://photos.zillowstatic.com/fp/ca5418d602180f249ed1cbb4ec0ce113-cc_ft_960.webp",
+      portImage2: "https://photos.zillowstatic.com/fp/1170b5cf138b4bf317e874e852b07b07-uncropped_scaled_within_1536_1152.webp",
+      portImage3: "https://photos.zillowstatic.com/fp/476ecde45eeb0cd881c38e8c8f434d74-uncropped_scaled_within_1536_1152.webp",
+      portDescription: "This is a description",
+    },
+    {
+      portId: "3",
+      portName: "11004 Comiskey Lane",
+      portAddress: "11004 Comiskey Ln, Charlotte, NC 28273",
+      portImage: "https://photos.zillowstatic.com/fp/9ce1ceba253db6e66b6ee316a672c99e-cc_ft_960.webp",
+      portImage2: "https://photos.zillowstatic.com/fp/2da8053b0640c60a661fd2c04eacbdea-cc_ft_576.webp",
+      portImage3: "https://photos.zillowstatic.com/fp/79ab4174cac03e7ac722296c307266b4-cc_ft_576.webp",
+      portDescription: "This is a description",
+    },
+  ];
+
   return (
     <>
       <Nav />
