@@ -125,28 +125,37 @@ function App() {
       portId: "1",
       portName: "1508 De La Vina",
       portAddress: "1508 De La Vina St, Santa Barbara, CA 93101",
-      portImage: "https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp",
-      portImage2: "https://photos.zillowstatic.com/fp/4e9e6ceab8eebed003b7a39777282cb5-cc_ft_576.webp",
-      portImage3: "https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp",
-      portDescription: "This is a description",
+      portImage:
+        "https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp",
+      portImage2:
+        "https://photos.zillowstatic.com/fp/4e9e6ceab8eebed003b7a39777282cb5-cc_ft_576.webp",
+      portImage3:
+        "https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp",
+      portDescription: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nobis doloremque sit atque ratione aliquam magni obcaecati consequatur corporis cupiditate dolorem necessitatibus impedit optio, dicta incidunt. Modi praesentium dignissimos dolore?",
     },
     {
       portId: "2",
       portName: "222 W Chestnut Ave",
       portAddress: "222 W Chestnut Ave, Lompoc, CA 93436",
-      portImage: "https://photos.zillowstatic.com/fp/ca5418d602180f249ed1cbb4ec0ce113-cc_ft_960.webp",
-      portImage2: "https://photos.zillowstatic.com/fp/1170b5cf138b4bf317e874e852b07b07-uncropped_scaled_within_1536_1152.webp",
-      portImage3: "https://photos.zillowstatic.com/fp/476ecde45eeb0cd881c38e8c8f434d74-uncropped_scaled_within_1536_1152.webp",
-      portDescription: "This is a description",
+      portImage:
+        "https://photos.zillowstatic.com/fp/ca5418d602180f249ed1cbb4ec0ce113-cc_ft_960.webp",
+      portImage2:
+        "https://photos.zillowstatic.com/fp/1170b5cf138b4bf317e874e852b07b07-uncropped_scaled_within_1536_1152.webp",
+      portImage3:
+        "https://photos.zillowstatic.com/fp/476ecde45eeb0cd881c38e8c8f434d74-uncropped_scaled_within_1536_1152.webp",
+      portDescription: "Quam consectetur quaerat cum fuga sed architecto facere reiciendis saepe eos at, quo quidem cupiditate quisquam doloribus labore ad nesciunt aliquid dicta suscipit, quis debitis nisi? Impedit magni explicabo at?",
     },
     {
       portId: "3",
       portName: "11004 Comiskey Lane",
       portAddress: "11004 Comiskey Ln, Charlotte, NC 28273",
-      portImage: "https://photos.zillowstatic.com/fp/9ce1ceba253db6e66b6ee316a672c99e-cc_ft_960.webp",
-      portImage2: "https://photos.zillowstatic.com/fp/2da8053b0640c60a661fd2c04eacbdea-cc_ft_576.webp",
-      portImage3: "https://photos.zillowstatic.com/fp/79ab4174cac03e7ac722296c307266b4-cc_ft_576.webp",
-      portDescription: "This is a description",
+      portImage:
+        "https://photos.zillowstatic.com/fp/9ce1ceba253db6e66b6ee316a672c99e-cc_ft_960.webp",
+      portImage2:
+        "https://photos.zillowstatic.com/fp/2da8053b0640c60a661fd2c04eacbdea-cc_ft_576.webp",
+      portImage3:
+        "https://photos.zillowstatic.com/fp/79ab4174cac03e7ac722296c307266b4-cc_ft_576.webp",
+      portDescription: "Perspiciatis, doloremque voluptatem soluta officia est rem accusantium libero sed eaque, maxime, veritatis saepe praesentium reiciendis expedita enim exercitationem ipsam eligendi minus omnis unde beatae recusandae! Exercitationem esse quidem maiores.",
     },
   ];
 
@@ -165,7 +174,10 @@ function App() {
           path="/Testimonials"
           element={<Testimonials testimonials={testimonials} />}
         />
-        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route
+          path="/Portfolio"
+          element={<Portfolio portfolioItems={portfolioItems} />}
+        />
         <Route path="/Contact" element={<Contact />} />
         <Route
           path="/loans/:loanId"

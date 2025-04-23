@@ -6,13 +6,13 @@ function SingleLoan({ loanPrograms }) {
   console.log("Found loan:", loan);
   const url = "null";
 
-  // if (!loan) {
-  //   return (
-  //     <>
-  //       <p>Loan not found!</p>
-  //     </>
-  //   );
-  // }
+  if (!loan) {
+    return (
+      <>
+        <p>Loan not found!</p>
+      </>
+    );
+  }
 
   return (
     <>
