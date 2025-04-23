@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 function Portfolio({ portfolioItems }) {
   return (
     <>
@@ -6,6 +7,7 @@ function Portfolio({ portfolioItems }) {
           <h1>{p.portName}</h1>
           <img src={p.portImage} alt={p.portName} />
           <p>{p.portDescription}</p>
+          <Link to={`/portfolio/${p.portId}`}>View Details</Link>
         </div>
       ))}
     </>
@@ -13,5 +15,3 @@ function Portfolio({ portfolioItems }) {
 }
 
 export default Portfolio;
-
-
