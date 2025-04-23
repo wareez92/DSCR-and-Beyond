@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import Loans from "./Loans";
 
-function Home({ testimonials, loanPrograms }) {
+function Home({ testimonials, loanPrograms, portfolioItems }) {
   return (
     <>
       {/* Hero Section */}
@@ -33,10 +33,7 @@ function Home({ testimonials, loanPrograms }) {
         <div>
           {loanPrograms.slice(0, 4).map((l, i) => (
             <div key={i}>
-              <img
-                src="src/assets/222 W Chestnut Ave - Califonia - Funded.pdf"
-                alt="icon"
-              />
+              <img src={l.icon} alt={l.loanName} />
               <h4>{l.loanName}</h4>
               <section>
                 <ul>
@@ -59,11 +56,13 @@ function Home({ testimonials, loanPrograms }) {
       <section>
         <h1> Portfolio</h1>
         <div>
-          <div>
-            <img src="null" />
-            <h6>Name of Home</h6>
-            <p>Date</p>
-          </div>
+          {portfolioItems.slice(0, 2).map((p, i) => (
+            <div key={i}>
+              <img src={p.portImage} alt={p.portName} />
+              <h4>{p.portName}</h4>
+              <Link to={`/portfolio/${p.portId}`}>View Details</Link>
+            </div>
+          ))}
         </div>
         <Link to="/Portfolio">View All</Link>
       </section>

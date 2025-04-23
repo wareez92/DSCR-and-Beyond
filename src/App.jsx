@@ -170,7 +170,7 @@ function App() {
         <Route
           path="/"
           element={
-            <Home testimonials={testimonials} loanPrograms={loanPrograms} />
+            <Home testimonials={testimonials} loanPrograms={loanPrograms} portfolioItems={portfolioItems} />
           }
         />
         <Route path="/loans" element={<Loans loanPrograms={loanPrograms} />} />
