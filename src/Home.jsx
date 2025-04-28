@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import Loans from "./Loans";
+import Contact from "./Contact";
 
 function Home({ testimonials, loanPrograms, portfolioItems }) {
   return (
@@ -91,23 +92,7 @@ function Home({ testimonials, loanPrograms, portfolioItems }) {
       <hr></hr>
 
       <section>
-        <h1>Contact</h1>
-        <form>
-          <p>
-            First <input type="name" placeholder="John" required /> Last{" "}
-            <input type="name" placeholder="Smith" />
-          </p>
-          <p>
-            {" "}
-            Subject <br />
-            <input type="text" size="58" />
-          </p>
-          <p>
-            Message <br />
-            <textarea></textarea>
-          </p>
-          <input type="submit"></input>
-        </form>
+        <Contact />
       </section>
     </>
   );

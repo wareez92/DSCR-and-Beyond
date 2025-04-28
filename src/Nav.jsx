@@ -12,6 +12,7 @@ function Nav() {
       <Link to="/Testimonials">Testimonials</Link>
       <Link to="/Contact">Contact</Link>
       <Link to="/Portfolio">Portfolio</Link>
+      <Link to="/Articles">Articles</Link>
     </>
   );
 }
