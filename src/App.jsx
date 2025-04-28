@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import { BrowserRouter, Route, Routes } from "react-router";
 import SingleLoan from "./SingleLoan";
 import SinglePortfolio from "./SinglePortfolio";
+import Articles from "./Articles";
 
 function App() {
   const testimonials = [
@@ -163,6 +164,30 @@ function App() {
     },
   ];
 
+  const blogs = [
+    {
+      blogId: "1",
+      image: "null",
+      caption: "enter capition here",
+      fullPost: "enter article here",
+      datePosted: "enter date",
+    },
+    {
+      blogId: "2",
+      image: "null",
+      caption: "enter capition here",
+      fullPost: "enter article here",
+      datePosted: "enter date",
+    },
+    {
+      blogId: "3",
+      image: "null",
+      caption: "enter capition here",
+      fullPost: "enter article here",
+      datePosted: "enter date",
+    },
+  ];
+
   return (
     <>
       <Nav />
@@ -170,7 +195,11 @@ function App() {
         <Route
           path="/"
           element={
-            <Home testimonials={testimonials} loanPrograms={loanPrograms} portfolioItems={portfolioItems} />
+            <Home
+              testimonials={testimonials}
+              loanPrograms={loanPrograms}
+              portfolioItems={portfolioItems}
+            />
           }
         />
         <Route path="/loans" element={<Loans loanPrograms={loanPrograms} />} />
@@ -191,6 +220,7 @@ function App() {
           path="/portfolio/:portId"
           element={<SinglePortfolio portfolioItems={portfolioItems} />}
         />
+        <Route path="/Articles" element={<Articles blogs={blogs} />} />
       </Routes>
       <Footer />
     </>
