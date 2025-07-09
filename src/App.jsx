@@ -138,6 +138,7 @@ function App() {
     },
     {
       portId: "2",
+
       portName: "222 W Chestnut Ave",
       portAddress: "222 W Chestnut Ave, Lompoc, CA 93436",
       portImage:
@@ -151,6 +152,7 @@ function App() {
     },
     {
       portId: "3",
+
       portName: "11004 Comiskey Lane",
       portAddress: "11004 Comiskey Ln, Charlotte, NC 28273",
       portImage:

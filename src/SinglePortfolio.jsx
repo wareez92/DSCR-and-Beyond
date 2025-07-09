@@ -23,7 +23,7 @@ function SinglePortfolio({ portfolioItems }) {
         <img src={portfolioItem.portImage3} alt={portfolioItem.portName} />
         <h4>{portfolioItem.portAddress}</h4>
         <p>{portfolioItem.portDescription}</p>
-        <Link to={url}>Get Started</Link>
+        <Link className="form-button" to={url}>Get Started</Link>
       </div>
     </>
   );

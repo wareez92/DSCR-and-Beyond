@@ -1,10 +1,21 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs, { send } from "@emailjs/browser";
 
 function Contact() {
   const form = useRef();
 
-  const [sucess, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(false); // or do something like navigate away, hide the message, etc.
+      }, 2000);
+
+      // Clean up the timer if the component unmounts early
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,30 +33,45 @@ function Contact() {
         }
       );
 
-      setSuccess()
+    setSuccess(true);
   };
 
+  if (success) {
+    return (
+      <>
+        <h6>
+          Your message has been received! We will get back to you quickly!
+        </h6>
+      </>
+    );
+  }
   return (
     <>
       <h1>Contact</h1>
-      <form ref={form} onSubmit={sendEmail}>
-        <p>
-          <label>Name</label>
-          <br/>
-          <input type="text" name="user_name" placeholder="John Smith" />
-        </p>
-        <p>
-          <label>Email</label>
-          <br/>
-          <input type="email" name="user_email" placeholder="johnsmith@gmail.com" />
-        </p>
-        <p>
-          <label>Message</label>
-          <br/>
-          <textarea name="message" />
-        </p>
-        <input type="submit" value="Send" />
-      </form>
+      <div className="contact">
+        <form ref={form} onSubmit={sendEmail}>
+          <p>
+            <label>Name</label>
+            <br />
+            <input type="text" name="user_name" placeholder="John Smith" />
+          </p>
+          <p>
+            <label>Email</label>
+            <br />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="johnsmith@gmail.com"
+            />
+          </p>
+          <p>
+            <label>Message</label>
+            <br />
+            <textarea name="message" />
+          </p>
+          <input className="form-button" type="submit" value="Send" />
+        </form>
+      </div>
     </>
   );
 }

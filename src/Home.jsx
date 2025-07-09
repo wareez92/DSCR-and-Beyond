@@ -1,99 +1,105 @@
 import { Link } from "react-router";
 import Loans from "./Loans";
 import Contact from "./Contact";
+import { FaRegBuilding } from "react-icons/fa";
 
 function Home({ testimonials, loanPrograms, portfolioItems }) {
   return (
     <>
-      {/* Hero Section */}
+      <div className="main-content">
+        {/* Hero Section */}
 
-      <hr></hr>
-
-      <section>
-        <h1>Headliner</h1>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Reprehenderit, a!
-        </h2>
-        <div>
-          <img src="src/assets/unnamed.png" alt="Sese Ntem" />
-          <h6>Sese Ntem</h6>
-          <p>Home Lending Advisor</p>
-        </div>
-        <a href="https://guzzoandco.my1003app.com/2306237/register">
-          <button>Apply Now</button>
-        </a>
-      </section>
-
-      {/* Loan Programs */}
-
-      <hr></hr>
-
-      <section>
-        <h1>Loan Programs</h1>
-        <div>
-          {loanPrograms.slice(0, 4).map((l, i) => (
-            <div key={i}>
-              <img src={l.icon} alt={l.loanName} />
-              <h4>{l.loanName}</h4>
-              <section>
-                <ul>
-                  {l.keyFeatures.map((f, i) => (
-                    <li key={i}>{f}</li>
-                  ))}
-                </ul>
-                <Link to={`/loans/${l.loanId}`}>View Details</Link>
-              </section>
+        <section className="hero-container">
+          <div className="background-slider">
+            <div className="bg bg1"></div>
+            <div className="bg bg2"></div>
+            <div className="bg bg3"></div>
+            <div className="bg bg4"></div>
+            <div className="bg bg5"></div>
+            <div className="hero-content">
+              <div className="hero-headline">
+                <h1>The Solution to All Your Home Lending Needs</h1>
+                <h4>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati, vitae illo et excepturi dolore molestiae
+                </h4>
+                <button className="hero-schedule-call">Schedule Call</button>
+              </div>
             </div>
-          ))}
-        </div>
-        <Link to="/Loans">View All</Link>
-      </section>
+          </div>
+        </section>
 
-      {/* Portfolio */}
+        {/* Loan Programs */}
 
-      <hr></hr>
+        <section className="loan-programs-homepage">
+          <h1>Loan Programs</h1>
 
-      <section>
-        <h1> Portfolio</h1>
-        <div>
-          {portfolioItems.slice(0, 2).map((p, i) => (
-            <div key={i}>
-              <img src={p.portImage} alt={p.portName} />
-              <h4>{p.portName}</h4>
-              <Link to={`/portfolio/${p.portId}`}>View Details</Link>
-            </div>
-          ))}
-        </div>
-        <Link to="/Portfolio">View All</Link>
-      </section>
+          <p>
+            A DSCR (Debt Service Coverage Ratio) loan is a type of real estate
+            loan commonly used by real estate investors, where approval is based
+            on the property's income—not the borrower’s personal income. Instead
+            of tax returns or W-2s, lenders look at the property's cash flow to
+            ensure it can cover the loan payments. Why It's Helpful for
+            Homebuyers or Investors: DSCR loans are especially useful for people
+            who may not qualify for traditional loans due to self-employment,
+            inconsistent income, or a high debt-to-income ratio. They’re ideal
+            for purchasing rental properties, as the focus is on the property's
+            ability to generate income, not your personal finances. This makes
+            DSCR loans a flexible option for growing a real estate portfolio.
+          </p>
+          <Link className="loan-program-view-all-homepage" to="/Loans">
+            View All
+          </Link>
+        </section>
 
-      {/* Testimonials */}
+        {/* Portfolio */}
 
-      <hr></hr>
+        <hr></hr>
 
-      <section>
-        <h1>Testimonials</h1>
-        <div>
-          {testimonials.slice(0, 4).map((t, index) => (
-            <div key={index}>
-              <h3>{t.name}</h3>
-              <p>{"⭐".repeat(t.rating)}</p>
-              <p>{t.review}</p>
-            </div>
-          ))}
-        </div>
-        ``
-        <Link to="/Testimonials">View All</Link>
-      </section>
+        <section className="portfolio-homepage">
+          <h1>Portfolio</h1>
 
-      {/* Contact */}
+          <div className="portfolio-container">
+            {portfolioItems.slice(0, 3).map((p, i) => (
+              <div key={i} className={`portfolio-item-${p.portId}`}>
+                <Link
+                  className="portfolio-homepage-links"
+                  to={`/portfolio/${p.portId}`}
+                >
+                  <h4>{`${p.portName}`}</h4>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <Link to="/Portfolio">View All</Link>
+        </section>
 
-      <hr></hr>
+        {/* Testimonials */}
 
-      <section>
-        <Contact />
-      </section>
+        <hr></hr>
+
+        <section className="testimonial-homepage">
+          <h1>Testimonials</h1>
+          <div>
+            {testimonials.slice(0, 4).map((t, index) => (
+              <div key={index}>
+                <h3>{t.name}</h3>
+                <p>{"⭐".repeat(t.rating)}</p>
+                <p className="testimonial-quote">{t.review}</p>
+              </div>
+            ))}
+          </div>
+          <Link to="/Testimonials">View All</Link>
+        </section>
+
+        {/* Contact */}
+
+        <hr></hr>
+
+        <section className="contact-homepage">
+          <Contact />
+        </section>
+      </div>
     </>
   );
 }

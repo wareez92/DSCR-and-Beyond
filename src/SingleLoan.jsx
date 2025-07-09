@@ -20,7 +20,7 @@ function SingleLoan({ loanPrograms }) {
         <h2>{loan.loanName}</h2>
         <img src={loan.icon} alt={loan.loanName} />
         <p>{loan.description}</p>
-        <Link to={url}>Get Started</Link>
+        <Link className="form-button" to={url}>Get Started</Link>
       </div>
     </>
   );
