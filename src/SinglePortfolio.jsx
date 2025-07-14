@@ -16,7 +16,7 @@ function SinglePortfolio({ portfolioItems }) {
 
   return (
     <>
-      <div>
+      <div className="single-portfolio">
         <h2>{portfolioItem.portName}</h2>
         <img src={portfolioItem.portImage} alt={portfolioItem.portName} />
         <img src={portfolioItem.portImage2} alt={portfolioItem.portName} />

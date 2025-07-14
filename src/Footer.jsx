@@ -8,6 +8,9 @@ function Footer() {
   return (
     <>
       <section className="footer">
+        <p className="all-right-reserved">
+          {"\u00A9"} 2025 DSCR & Beyond. All rights reserved.
+        </p>
         <div className="footer-links">
           <Link className="footer-link" to="/">
             <FaFacebookSquare size={25} color="white" />
@@ -16,12 +19,8 @@ function Footer() {
             <TiSocialInstagram size={25} color="white" />
           </Link>
           <Link className="footer-link" to="/">
-            <IoLogoYoutube size={25} color="white" />
-          </Link>
-          <Link className="footer-link" to="/">
             <FaLinkedin size={25} color="white" />
           </Link>
-
         </div>
       </section>
     </>

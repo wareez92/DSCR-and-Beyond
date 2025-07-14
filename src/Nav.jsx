@@ -30,6 +30,39 @@ function Nav() {
               <RxHamburgerMenu className="nav-hamburger-icon" />
             )}
           </button>
+          <ul className="nav-menu-items-2">
+            <li>
+              <Link to="/" onClick={toggleMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/Loans" onClick={toggleMenu}>
+                Loan Programs{" "}
+              </Link>
+            </li>
+            <li>
+              <Link to="/Testimonials" onClick={toggleMenu}>
+                Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link to="/Contact" onClick={toggleMenu}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/Portfolio" onClick={toggleMenu}>
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/Articles" onClick={toggleMenu}>
+                Articles
+              </Link>
+            </li>
+            <button className="nav-schedule-call-2">Get Started</button>
+          </ul>
         </div>
       </header>
 

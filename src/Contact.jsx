@@ -47,7 +47,8 @@ function Contact() {
   }
   return (
     <>
-      <h1>Contact</h1>
+      <h1 className="contact-heading">Contact</h1>
+
       <div className="contact">
         <form ref={form} onSubmit={sendEmail}>
           <p>

@@ -255,10 +255,39 @@ body {
 
 /* --- Loan Programs --- */
 
+.loan-programs {
+  padding-bottom: 6em;
+}
+
+.loan-programs > div > h4 {
+  margin-bottom: 2em;
+}
+
+.loan-programs > div > img {
+  margin-bottom: 2em;
+  margin-top: 4em;
+}
+
 .loan-programs-homepage,
 .portfolio-homepage,
 .testimonial-homepage {
   margin-bottom: 5em;
+}
+
+.testimonials > h1 {
+  margin-bottom: 2em;
+}
+
+.testimonials > div {
+  margin-bottom: 5em;
+}
+
+.testimonials > div:last-child {
+  margin-bottom: 9em;
+}
+
+.testimonials > div > p {
+  margin-bottom: 2em;
 }
 
 .loan-programs-homepage > p::first-letter {
@@ -418,8 +447,28 @@ p {
 
 /* Contact */
 
-.contact {
-  margin: 8em 0 11.2em 0 ;
+.contact > form {
+  margin-bottom: 7em;
+}
+
+.contact > form > .form-button {
+  margin-bottom: -10em;
+}
+
+.contact-heading {
+  margin-top: 5em;
+  font-family: "Baskervville SC", serif;
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+  line-height: 2em;
+  color: var(--third-color);
+  background: url(/assets/NavItemBG.svg), no-repeat;
+  background-position: center;
+  background-size: 32em;
+}
+
+.contact-homepage {
+  margin: -3em 0 11.2em 0;
 }
 
 form p {
@@ -446,7 +495,7 @@ p > input {
   padding: 0.75em 2em;
   color: var(--third-color);
   letter-spacing: 0.2em;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   margin-top: 4em;
 }
 
@@ -478,7 +527,7 @@ textarea {
   .nav-content {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
   }
 
   /* .nav-logo {
@@ -528,15 +577,16 @@ textarea {
 .footer {
   background-color: var(--third-color);
   width: 100%;
-  height: 90px;
+  height: 160px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-links {
-  display: flex;
   gap: 1em;
+  display: flex;
 }
 
 .footer-link > a {
@@ -547,13 +597,212 @@ textarea {
 }
 
 .articles {
-  margin: 8em 4em 2em ;
+  margin: 8em 4em 2em;
 }
 
 .portfolio {
-  margin: 8em 2em 4em 1.5em;
+  margin: 8em 2em 8em 1.5em;
 }
 
 .portfolio > div > img {
   width: 24em;
+}
+
+.portfolio > div > p {
+  margin-bottom: 2em;
+}
+
+.portfolio > div > h1 {
+  margin-top: 2em;
+}
+
+.portfolio > div {
+  margin-bottom: 6em;
+}
+
+.single-portfolio {
+  margin-top: 8em;
+  margin-bottom: 6em;
+  padding: 0 2em 0 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.single-portfolio > p {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+.single-portfolio > img {
+  width: 20em;
+}
+
+.button-all {
+}
+
+.all-right-reserved {
+  font-size: 1em;
+  color: var(--secondary-color);
+  margin-bottom: 1em;
+}
+
+/* Ipad Pro Styling */
+
+@media (min-width: 820px) {
+  .nav-menu {
+    background-color: var(--secondary-color);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    z-index: 800;
+    border: 1px solid var(--secondary-color);
+    opacity: 1;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    height: 100vh;
+    transition: top 0.8s ease-in-out;
+  }
+
+  /* .nav-menu.show {
+    opacity: 1;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    z-index: 800;
+  }
+
+  .nav-menu-items {
+    font-size: 3.5em;
+    margin-top: 2em;
+    gap: -2em;
+  } */
+  /* 
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  } */
+
+  /* .nav-header {
+    height: 10.1em;
+  }
+
+  .nav-logo {
+    width: 30em;
+    margin-right: 5em;
+  }
+
+  .nav-schedule-call {
+    font-size: 2em;
+  }
+
+  .nav-hamburger {
+    font-size: 2em;
+  } */
+
+  .footer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav-hamburger {
+    display: none;
+  }
+
+  .nav-menu-items-2 {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+  }
+
+  .nav-menu-items-2 li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+    padding: 0 0 0.05em 0;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-menu-items-2 li a:hover {
+    opacity: 1;
+  }
+
+  .nav-schedule-call {
+    display: none;
+  }
+
+  .nav-schedule-call-2 {
+    font-weight: 600;
+    border-radius: 0.1em;
+    padding: 0.5em 0.7em;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    margin-top: -0.3em;
+    opacity: 0.6;
+    transition: opacity 0.3 ease;
+  }
+
+  .nav-schedule-call-2:hover {
+    opacity: 1;
+  }
+
+  .nav-content {
+    margin-top: 0.3em;
+  }
+
+  .nav-menu.show {
+    display: none;
+  }
+
+  .portfolio-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 20em);
+    height: 26em;
+    justify-content: center;
+    font-size: 1em;
+    gap: 2em;
+    margin-bottom: 5em;
+  }
+
+  .portfolio-item-1,
+  .portfolio-item-2,
+  .portfolio-item-3 {
+    background-size: cover;
+    border-radius: 0.33em;
+    transition: transform .2s ease;
+  }
+
+  .portfolio-item-1:hover,
+  .portfolio-item-2:hover,
+  .portfolio-item-3:hover {
+    transform: translateY(-2em);
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-schedule-call-2 {
+    display: none;
+  }
+
+  .nav-menu-items-2 {
+    display: none;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    margin: 0 0.05em 0 -2em;
+  }
 }
