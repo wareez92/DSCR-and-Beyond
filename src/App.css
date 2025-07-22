@@ -137,7 +137,7 @@ body {
 
 .hero-container {
   /* position: relative; */
-  height: 600px;
+  height: 50em;
   width: 100%;
   margin: 0;
 }
@@ -207,31 +207,30 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-color: rgba(34, 34, 49, 0.755);
   background-blend-mode: overlay;
   opacity: 0;
   animation: fade 20s infinite;
 }
 
 .bg1 {
-  background-image: url(/assets/SlideHome1.png);
+  background-image: url(https://photos.zillowstatic.com/fp/ca5418d602180f249ed1cbb4ec0ce113-cc_ft_960.webp);
   animation-delay: 0s;
 }
 .bg2 {
-  background-image: url(/assets/Untitled\ design.jpg);
+  background-image: url(https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp);
 
   animation-delay: 4s;
 }
 .bg3 {
-  background-image: url(/assets/SlideHome3.png);
+  background-image: url(https://photos.zillowstatic.com/fp/9ce1ceba253db6e66b6ee316a672c99e-cc_ft_960.webp);
   animation-delay: 8s;
 }
 .bg4 {
-  background-image: url(/assets/SlideHome4.png);
+  background-image: url(https://photos.zillowstatic.com/fp/b0f9d802ddd7e24d53637c93464e0afe-cc_ft_960.webp);
   animation-delay: 12s;
 }
 .bg5 {
-  background-image: url(/assets/SlideHome5.png);
+  background-image: url(https://photos.zillowstatic.com/fp/4e9e6ceab8eebed003b7a39777282cb5-cc_ft_576.webp);
   animation-delay: 16s;
 }
 
@@ -259,13 +258,22 @@ body {
   padding-bottom: 6em;
 }
 
+.loan-programs > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+
+
 .loan-programs > div > h4 {
   margin-bottom: 2em;
 }
 
-.loan-programs > div > img {
+.loan-programs > div > div > img {
   margin-bottom: 2em;
   margin-top: 4em;
+  width: 13em;
 }
 
 .loan-programs-homepage,
@@ -328,6 +336,7 @@ section > a {
   padding: 0.75em 2em;
   color: var(--third-color);
   letter-spacing: 0.2em;
+  transition: padding 0.2s ease;
 }
 
 p {
@@ -377,7 +386,7 @@ p {
 .portfolio-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 160px);
+  grid-template-rows: repeat(4, 160px);
   font-size: 1em;
   gap: 0.8em;
   margin-bottom: 5em;
@@ -425,6 +434,18 @@ p {
 .portfolio-item-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://photos.zillowstatic.com/fp/9ce1ceba253db6e66b6ee316a672c99e-cc_ft_960.webp");
+
+  object-fit: fill;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.portfolio-item-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://photos.zillowstatic.com/fp/b0f9d802ddd7e24d53637c93464e0afe-cc_ft_960.webp");
 
   object-fit: fill;
   background-position: center;
@@ -483,7 +504,7 @@ form p {
 p > input {
   border: 1px solid black;
   border-radius: 0.25em;
-  width: 35em;
+  width: 30em;
 }
 
 .form-button {
@@ -500,14 +521,18 @@ p > input {
 }
 
 textarea {
-  width: 35em;
-  height: 6em;
+  width: 30em;
+  height: 20em;
   border: 1px solid black;
   border-radius: 0.25em;
 }
 
 .main-content {
   padding: 2em;
+}
+
+.articles > div > img {
+  width: 20em;
 }
 
 @media (max-width: 431px) {
@@ -556,6 +581,10 @@ textarea {
     height: 6em;
     border: 1px solid black;
     border-radius: 0.25em;
+  }
+
+  .articles > div > img {
+    width: 20em;
   }
 
   .footer {
@@ -648,6 +677,8 @@ textarea {
   margin-bottom: 1em;
 }
 
+
+
 /* Ipad Pro Styling */
 
 @media (min-width: 820px) {
@@ -703,6 +734,10 @@ textarea {
     font-size: 2em;
   } */
 
+  .articles > div > img {
+    width: 20em;
+  }
+
   .footer {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -714,6 +749,10 @@ textarea {
     display: none;
   }
 
+  .nav-logo {
+    margin-bottom: 0.4em;
+  }
+
   .nav-menu-items-2 {
     display: flex;
     list-style: none;
@@ -723,11 +762,13 @@ textarea {
   .nav-menu-items-2 li a {
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: 1.2em;
-    opacity: 0.6;
+    font-size: 0.9em;
+    opacity: 0.65;
     transition: opacity 0.3s ease-in-out;
     padding: 0 0 0.05em 0;
-    letter-spacing: 0.05em;
+    /* letter-spacing: 0.05em; */
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
   }
 
   .nav-menu-items-2 li a:hover {
@@ -739,15 +780,15 @@ textarea {
   }
 
   .nav-schedule-call-2 {
-    font-weight: 600;
     border-radius: 0.1em;
     padding: 0.5em 0.7em;
     background-color: transparent;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
-    margin-top: -0.3em;
-    opacity: 0.6;
+    margin-top: -0.5em;
+    opacity: 0.65;
     transition: opacity 0.3 ease;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .nav-schedule-call-2:hover {
@@ -755,17 +796,37 @@ textarea {
   }
 
   .nav-content {
-    margin-top: 0.3em;
+    margin-top: 0.5em;
   }
 
   .nav-menu.show {
     display: none;
   }
 
+  .portfolio-items {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+  }
+
+  .portfolio > h1 {
+    margin-bottom: 1.5em;
+  }
+
+  .portfolio-items > div > img {
+    width: 32em;
+    border-radius: 0.33em;
+  }
+
+  .portfolio-items > div > p {
+    margin-bottom: 2em;
+  }
+
   .portfolio-container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 20em);
+    grid-template-columns: repeat(4, 17em);
     height: 26em;
     justify-content: center;
     font-size: 1em;
@@ -775,16 +836,110 @@ textarea {
 
   .portfolio-item-1,
   .portfolio-item-2,
-  .portfolio-item-3 {
+  .portfolio-item-3,
+  .portfolio-item-4 {
     background-size: cover;
     border-radius: 0.33em;
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
   }
 
   .portfolio-item-1:hover,
   .portfolio-item-2:hover,
-  .portfolio-item-3:hover {
+  .portfolio-item-3:hover,
+  .portfolio-item-4:hover {
     transform: translateY(-2em);
+  }
+
+  .single-portfolio {
+    display: flex;
+    justify-content: center;
+  }
+
+  .single-portfolio > a {
+    margin-top: 0.5em;
+  }
+
+  .single-portfolio-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1em;
+    column-gap: 1em;
+    border-radius: 0.5em;
+  }
+
+  .single-portfolio-gallery > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .single-portfolio-gallery > img:first-child {
+    grid-row: span 2;
+    height: 100%;
+  }
+
+  .testimonial-homepage > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border: solid 2px var(--third-color);
+    padding: 0.75em 2em;
+    color: var(--third-color);
+    letter-spacing: 0.2em;
+    line-height: 1em;
+  }
+
+  .testimonial-homepage > a:hover,
+  .portfolio-homepage > a:hover,
+  .loan-programs-homepage > a:hover,
+  .form-button:hover {
+    text-decoration: underline;
+  }
+
+  form > p > input {
+    width: 50em;
+    height: 2em;
+  }
+
+  textarea {
+    width: 50em;
+    height: 20em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+  }
+
+  .articles {
+    padding: 0 4em 0 2em;
+    margin: 8em 0 10em 2em;
+  }
+  .articles > div > img {
+    width: 70em;
+  }
+
+  .articles > div > p:nth-of-type(2) {
+    margin-top: -4em;
+  }
+
+  .articles > div > p:nth-of-type(2)::first-letter {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3rem;
+    color: red;
+    font-style: italic;
+  }
+
+  .articles > div > p:nth-of-type(2)::first-line {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .articles > div > hr {
+    display: none;
+  }
+
+  .article-button {
+    padding: 2em 8em;
+    border-radius: 2em;
   }
 }
 
@@ -804,5 +959,91 @@ textarea {
 
   .nav-logo {
     margin: 0 0.05em 0 -2em;
+  }
+
+  .portfolio-items > div > img {
+    width: 30em;
+    border-radius: 0.33em;
+  }
+
+  .portfolio-items > div > p {
+    margin-bottom: 2em;
+  }
+
+  .portfolio-items > div {
+    margin-bottom: 4em;
+  }
+
+  .single-portfolio-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .single-portfolio-gallery > img {
+    width: 33em;
+    border-radius: 0.33em;
+  }
+
+  .nav-menu-items {
+    font-size: 1.75rem;
+    margin-top: 1.75em;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    margin: 8em 2em 2em 2em;
+  }
+
+  .articles > h1 {
+    margin-bottom: 1.5em;
+  }
+
+  .articles > div > img {
+    width: 30em;
+    border-radius: 0.33em;
+  }
+
+  .articles > div > p:nth-of-type(2) {
+    margin-top: -4em;
+  }
+
+  .articles > div > p:nth-of-type(2)::first-letter {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3rem;
+    color: red;
+    font-style: italic;
+  }
+
+  .articles > div > p:nth-of-type(2)::first-line {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .articles > div > p:nth-of-type(1) {
+    text-decoration: underline;
+    font-style: italic;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: -0.05em;
+    margin-top: -1em;
+  }
+
+  .article-button {
+    width: 12em;
+    border-radius: 10em;
+    padding: 1.5em 5em;
+    align-self: center;
+    margin-top: -3em;
+    margin-bottom: 10em;
+  }
+
+  .articles > div > hr {
+    margin-bottom: 6em;
+    margin-top: 6em;
+  }
+
+  .articles > div:last-of-type > hr {
+    display: none;
   }
 }

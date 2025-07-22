@@ -18,12 +18,16 @@ function SinglePortfolio({ portfolioItems }) {
     <>
       <div className="single-portfolio">
         <h2>{portfolioItem.portName}</h2>
-        <img src={portfolioItem.portImage} alt={portfolioItem.portName} />
-        <img src={portfolioItem.portImage2} alt={portfolioItem.portName} />
-        <img src={portfolioItem.portImage3} alt={portfolioItem.portName} />
+        <div className="single-portfolio-gallery">
+          <img src={portfolioItem.portImage} alt={portfolioItem.portName} />
+          <img src={portfolioItem.portImage2} alt={portfolioItem.portName} />
+          <img src={portfolioItem.portImage3} alt={portfolioItem.portName} />
+        </div>
         <h4>{portfolioItem.portAddress}</h4>
         <p>{portfolioItem.portDescription}</p>
-        <Link className="form-button" to={url}>Get Started</Link>
+        <Link className="form-button" to={url}>
+          Get Started
+        </Link>
       </div>
     </>
   );

@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 function Articles({ blogs }) {
   return (
     <>
@@ -7,10 +9,14 @@ function Articles({ blogs }) {
           <div key={i}>
             <img src={b.image} alt={b.caption} />
             <h1>{b.caption}</h1>
-            <p>{b.datePosted}</p>
+            <p> posted on {b.datePosted}</p>
             <p>{b.fullPost}</p>
+            <hr className="article-line"></hr>
           </div>
         ))}
+        <Link to={"/"} className="form-button article-button">
+          Let's Connect
+        </Link>
       </div>
     </>
   );

@@ -58,7 +58,7 @@ function App() {
     {
       loanId: "1",
       loanName: "DSCR 1-4 Unit",
-      icon: "null",
+      icon: "/assets/ALT (3).svg",
       keyFeatures: [
         "No Personal Income Verification",
         "Ideal for Real Estate Investors",
@@ -71,7 +71,7 @@ function App() {
     {
       loanId: "2",
       loanName: "DSCR 5-8 Unit",
-      icon: "null",
+      icon: "/assets/ALT (4).svg",
       keyFeatures: [
         "Income-Based Qualification",
         "No Tax Returns or Employment Verification",
@@ -84,7 +84,7 @@ function App() {
     {
       loanId: "3",
       loanName: "DSCR Alt Doc",
-      icon: "null",
+      icon: "/assets/ALT (5).svg",
       keyFeatures: [
         "Alternative Documentation Accepted",
         "Ideal for Self-Employed Investors",
@@ -97,7 +97,7 @@ function App() {
     {
       loanId: "4",
       loanName: "DSCR ITIN",
-      icon: "null",
+      icon: "/assets/ALT (6).svg",
       keyFeatures: [
         "No Social Security Number Required",
         "Property Income-Based Qualification",
@@ -110,7 +110,7 @@ function App() {
     {
       loanId: "5",
       loanName: "DSCR Foreign National",
-      icon: "null",
+      icon: "/assets/ALT (2).svg",
       keyFeatures: [
         "No Social Security Number Required",
         "Property Income-Based Qualification",
@@ -164,29 +164,64 @@ function App() {
       portDescription:
         "Perspiciatis, doloremque voluptatem soluta officia est rem accusantium libero sed eaque, maxime, veritatis saepe praesentium reiciendis expedita enim exercitationem ipsam eligendi minus omnis unde beatae recusandae! Exercitationem esse quidem maiores.",
     },
+    {
+      portId: "4",
+
+      portName: "1881 Millstream Holw, Conyers",
+      portAddress: "1881 Millstream Holw, Conyers, GA 30012",
+      portImage:
+        "https://photos.zillowstatic.com/fp/b0f9d802ddd7e24d53637c93464e0afe-cc_ft_960.webp",
+      portImage2:
+        "https://photos.zillowstatic.com/fp/97c17523c18ad16f479626fc35a00fc3-cc_ft_576.webp",
+      portImage3:
+        "https://photos.zillowstatic.com/fp/21a728e3d2acfdaa4ac3712ddce95e5a-cc_ft_960.webp",
+      portDescription:
+        "Perspiciatis, doloremque voluptatem soluta officia est rem accusantium libero sed eaque, maxime, veritatis saepe praesentium reiciendis expedita enim exercitationem ipsam eligendi minus omnis unde beatae recusandae! Exercitationem esse quidem maiores.",
+    },
   ];
 
   const blogs = [
     {
       blogId: "1",
-      image: "null",
-      caption: "enter capition here",
-      fullPost: "enter article here",
-      datePosted: "enter date",
+      image:
+        "https://designerwoodflooring.com/wp-content/uploads/2022/07/house.jpg",
+      caption: "Understanding DSCR Loans for Smarter Home Lending",
+      fullPost: `
+      Whether you're a seasoned investor or new to real estate, understanding **DSCR (Debt Service Coverage Ratio) loans** is key to expanding your portfolio without the hassle of traditional income documentation. Unlike conventional mortgages that focus on your personal income and credit history, DSCR loans evaluate the income potential of the investment property itself. If the property generates enough rental income to cover the monthly debt payment, you’re well on your way to qualifying.
+
+      This approach is ideal for self-employed borrowers, LLCs, and investors who may not show significant income on paper. DSCR loans are also faster to close, since they rely on property cash flow instead of digging through tax returns and employment history. You can use them to purchase new properties or refinance existing ones to free up cash for future investments.
+
+      Curious about how a DSCR loan can work for you? Schedule a call today to get expert guidance and customized lending solutions tailored to your goals.
+    `,
+      datePosted: "2025-07-18",
     },
     {
       blogId: "2",
-      image: "null",
-      caption: "enter capition here",
-      fullPost: "enter article here",
-      datePosted: "enter date",
+      image:
+        "https://www.bocadolobo.com/en/inspiration-and-ideas/wp-content/uploads/2022/04/B-05-scaled-1.jpg",
+      caption: "What Is a DSCR ITIN Loan and Who Is It For?",
+      fullPost: `
+      Many people assume that investing in U.S. real estate requires a Social Security Number, but that's no longer the case thanks to **DSCR ITIN loans**. These specialized loans are designed for individuals who file taxes using an **Individual Taxpayer Identification Number (ITIN)** instead of an SSN. This is a game-changer for foreign nationals, immigrants, and non-resident investors looking to purchase income-producing properties in the U.S.
+
+      Just like traditional DSCR loans, ITIN-based DSCR loans evaluate the cash flow of the property rather than your employment or credit profile. That means you can qualify based on how much rental income the property generates — not on whether you have a W-2 job or a U.S.-based credit score. These loans are flexible, scalable, and built to support long-term investing strategies.
+
+      If you're an ITIN holder ready to invest or refinance in U.S. real estate, Schedule a call to find out how we can help you unlock these opportunities.
+    `,
+      datePosted: "2025-07-18",
     },
     {
       blogId: "3",
-      image: "null",
-      caption: "enter capition here",
-      fullPost: "enter article here",
-      datePosted: "enter date",
+      image:
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80",
+      caption: "Top Benefits of 1–4 Unit DSCR Loans for Investors",
+      fullPost: `
+      Real estate investors looking to scale efficiently should seriously consider the benefits of **1–4 unit DSCR loans**. These loans are crafted specifically for smaller residential properties like single-family homes, duplexes, triplexes, and fourplexes. The major advantage? They’re based entirely on **property income performance**, not your personal tax returns or income documentation.
+
+      These DSCR loans are a favorite among full-time investors and part-time landlords because they streamline the approval process and provide a pathway to **build or expand a rental portfolio** with minimal red tape. Whether you're refinancing a cash-flowing asset or acquiring a new one, 1–4 unit DSCR loans offer fast funding, low documentation, and long-term financial flexibility.
+
+      Want to see how a 1–4 unit DSCR loan fits into your strategy? Schedule a call to speak with one of our loan specialists who can guide you through the process step-by-step.
+    `,
+      datePosted: "2025-07-18",
     },
   ];
 

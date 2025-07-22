@@ -60,7 +60,7 @@ function Home({ testimonials, loanPrograms, portfolioItems }) {
           <h1>Portfolio</h1>
 
           <div className="portfolio-container">
-            {portfolioItems.slice(0, 3).map((p, i) => (
+            {portfolioItems.map((p, i) => (
               <div key={i} className={`portfolio-item-${p.portId}`}>
                 <Link
                   className="portfolio-homepage-links"
