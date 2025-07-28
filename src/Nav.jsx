@@ -61,6 +61,11 @@ function Nav() {
                 Articles
               </Link>
             </li>
+            <li>
+              <Link to="/About" onClick={toggleMenu}>
+                About
+              </Link>
+            </li>
             <button className="nav-schedule-call-2">Get Started</button>
           </ul>
         </div>
@@ -96,6 +101,11 @@ function Nav() {
           <li>
             <Link to="/Articles" onClick={toggleMenu}>
               Articles
+            </Link>
+          </li>
+          <li>
+            <Link to="/About" onClick={toggleMenu}>
+              About
             </Link>
           </li>
         </ul>

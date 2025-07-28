@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import SingleLoan from "./SingleLoan";
 import SinglePortfolio from "./SinglePortfolio";
 import Articles from "./Articles";
+import About from "./About";
 
 function App() {
   const testimonials = [
@@ -258,6 +259,7 @@ function App() {
           element={<SinglePortfolio portfolioItems={portfolioItems} />}
         />
         <Route path="/Articles" element={<Articles blogs={blogs} />} />
+        <Route path="/About" element={<About />} />
       </Routes>
       <Footer />
     </>

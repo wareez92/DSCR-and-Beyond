@@ -16,11 +16,18 @@ function SingleLoan({ loanPrograms }) {
 
   return (
     <>
-      <div>
+      <div className="single-loan">
         <h2>{loan.loanName}</h2>
         <img src={loan.icon} alt={loan.loanName} />
         <p>{loan.description}</p>
-        <Link className="form-button" to={url}>Get Started</Link>
+        <p>
+          <Link className="form-button" to={url}>
+            Get Started
+          </Link>
+        </p>
+        <Link className=" back-button" to="/loans">
+          Back
+        </Link>
       </div>
     </>
   );

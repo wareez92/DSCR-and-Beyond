@@ -16,6 +16,9 @@ function Portfolio({ portfolioItems }) {
             </div>
           ))}
         </div>
+        <Link className="back-button" to="/">
+          Back
+        </Link>
       </div>
     </>
   );

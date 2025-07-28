@@ -264,8 +264,6 @@ body {
   gap: 5em;
 }
 
-
-
 .loan-programs > div > h4 {
   margin-bottom: 2em;
 }
@@ -282,7 +280,46 @@ body {
   margin-bottom: 5em;
 }
 
-.testimonials > h1 {
+.loan-programs-homepage > p {
+  margin-bottom: 3em;
+}
+
+.testimonial-homepage > h1 {
+  margin-bottom: 2em;
+}
+
+.testimonial-homepage > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.testimonial-homepage > div {
+  margin-bottom: 5em;
+}
+
+.testimonial-homepage > div > div {
+  padding: 6em 2em 1em;
+  border-radius: 0.5em;
+}
+
+.testimonial-homepage > div > div > p > span {
+  /* font-weight: bolder; */
+  font-size: 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.testimonial-homepage > div > div > p {
+  margin-bottom: 1em;
+}
+
+.testimonial-homepage > div > div > h3 {
+  font-style: italic;
+}
+
+.testimonial-homepage > div > div > p .testimonials > h1 {
   margin-bottom: 2em;
 }
 
@@ -472,7 +509,7 @@ p {
   margin-bottom: 7em;
 }
 
-.contact > form > .form-button {
+.contact > form > .contact > form > .form-button {
   margin-bottom: -10em;
 }
 
@@ -534,75 +571,6 @@ textarea {
 .articles > div > img {
   width: 20em;
 }
-
-@media (max-width: 431px) {
-  #root {
-    max-width: 431px;
-  }
-
-  .nav-header {
-    position: fixed;
-    height: 90px;
-    background-color: var(--third-color);
-    background-blend-mode: overlay;
-    z-index: 10000;
-    border-bottom: rgb(36, 48, 68) 0.5px solid;
-  }
-
-  .nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* .nav-logo {
-    margin-
-  } */
-
-  .nav-schedule-call {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    border-radius: 0.1em;
-    padding: 0.5em 0.7em;
-    background-color: transparent;
-    color: var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    transition: color, background-color ease 0.2s;
-  }
-
-  p > input {
-    border: 1px solid black;
-    border-radius: 0.25em;
-    width: 20em;
-  }
-
-  textarea {
-    width: 20em;
-    height: 6em;
-    border: 1px solid black;
-    border-radius: 0.25em;
-  }
-
-  .articles > div > img {
-    width: 20em;
-  }
-
-  .footer {
-    background-color: var(--third-color);
-    width: 100%;
-    /* padding: 0.5em 0; */
-  }
-
-  .footer-links {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .footer-link > a {
-    color: var(--secondary-color);
-  }
-}
-
 .footer {
   background-color: var(--third-color);
   width: 100%;
@@ -668,20 +636,15 @@ textarea {
   width: 20em;
 }
 
-.button-all {
-}
-
 .all-right-reserved {
   font-size: 1em;
   color: var(--secondary-color);
   margin-bottom: 1em;
 }
 
-
-
 /* Ipad Pro Styling */
 
-@media (min-width: 820px) {
+@media (max-width: 920px) {
   .nav-menu {
     background-color: var(--secondary-color);
     position: fixed;
@@ -735,16 +698,11 @@ textarea {
   } */
 
   .articles > div > img {
-    width: 20em;
-  }
-
-  .footer {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 30em;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1112.12px) {
   .nav-hamburger {
     display: none;
   }
@@ -757,6 +715,11 @@ textarea {
     display: flex;
     list-style: none;
     gap: 1em;
+  }
+
+  .footer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
   }
 
   .nav-menu-items-2 li a {
@@ -812,6 +775,16 @@ textarea {
 
   .portfolio > h1 {
     margin-bottom: 1.5em;
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 2em;
+    margin-top: 3em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
   }
 
   .portfolio-items > div > img {
@@ -897,10 +870,26 @@ textarea {
     text-decoration: underline;
   }
 
+  .testimonials > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 2em;
+    margin-top: 3em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
   form > p > input {
     width: 50em;
     height: 2em;
   }
+
+
+
 
   textarea {
     width: 50em;
@@ -911,14 +900,35 @@ textarea {
 
   .articles {
     padding: 0 4em 0 2em;
-    margin: 8em 0 10em 2em;
+    margin-top: 5em 3em 0 3em;
+    display: flex;
+    flex-direction: column;
   }
+
+  .articles > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
   .articles > div > img {
-    width: 70em;
+    width: 55rem;
+  }
+
+  .articles > div > p:nth-of-type(1) {
+    text-decoration: underline;
   }
 
   .articles > div > p:nth-of-type(2) {
-    margin-top: -4em;
+    margin-top: 1em;
+    margin-bottom: 3.5em;
   }
 
   .articles > div > p:nth-of-type(2)::first-letter {
@@ -940,10 +950,189 @@ textarea {
   .article-button {
     padding: 2em 8em;
     border-radius: 2em;
+    font-weight: 600;
+    width: 15em;
+    margin-top: 0.25em;
+    margin-bottom: 8em;
+    align-self: center;
+  }
+
+  .loan-programs > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4em;
+  }
+
+  .loan-programs > div > div {
+    width: 19em;
+    transition: transform 0.2s ease;
+    border: 0.5px solid var(--third-color);
+    margin-top: 2em;
+    padding: 0em 1.25em 4.25em 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 30px rgb(153, 143, 190);
+  }
+
+  .loan-programs > div > div:hover {
+    transform: translateY(-1em);
+  }
+
+  .loan-programs > div > div > h4 {
+    margin-top: 0.5em;
+    font-size: 1.25rem;
+    font-family: "Baskervville SC";
+    text-transform: uppercase;
+    color: var(--third-color);
+  }
+
+  .loan-programs > div > div > hr {
+    margin-bottom: 1.5em;
+    width: 16em;
+    color: var(--third-color);
+    opacity: 0.6;
+  }
+
+  .loan-programs > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 0.8em;
+    margin-top: 3em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
+  .loan-programs > div > div > ul {
+    list-style: none;
+    margin: -1em 0em 1.5em 0;
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em 0 1em 0;
+  }
+
+  .loan-check {
+    margin-right: 1em;
+    color: green;
+    width: 0.7rem;
+  }
+
+  .loan-highlight {
+    color: var(--third-color);
+    font-weight: 800;
+  }
+
+  .loan-programs > div {
+    margin-bottom: 10em;
+  }
+
+  .about {
+    margin-top: 8em;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-bottom: 4em;
+  }
+
+  .about > div > img {
+    border-radius: 2%;
+    
+  }
+
+  .about > div > h3 {
+    font-size: 1.75em;
+  }
+
+  .about > div > h3 > .sese {
+    color: var(--third-color);
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "Baskervville SC", serif;
+  }
+
+  .about > div > p > a {
+    text-decoration: none;
+  }
+
+  .about > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 1em;
+    margin-top: 3em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
+  .about > div > p {
+    line-height: 2em;
+    margin-top: 1em;
+  }
+
+  .about > div > p > span {
+    font-style: italic;
+    color: var(--third-color);
+  }
+
+  .single-loan {
+    margin-bottom: 5em;
+    margin-top: 9em;
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+
+  .single-loan > img {
+    width: 15em;
+  }
+
+  .single-loan > h2 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    color: var(--third-color);
+    margin-bottom: 2em;
+  }
+
+  .single-loan > p {
+    margin-bottom: 3em;
+  }
+
+  .back-button {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .quotation {
+    /* font-weight: bolder; */
+    font-size: 2em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+  }
+
+  .testimonials > div > h3 {
+    font-style: italic;
+  }
+
+  .testimonials > div > p,
+  p,
+  h3 {
+    margin-bottom: 1em;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1111.11px) {
+  .back-button {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   .nav-schedule-call-2 {
     display: none;
   }
@@ -961,6 +1150,18 @@ textarea {
     margin: 0 0.05em 0 -2em;
   }
 
+  .portfolio > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 2em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
   .portfolio-items > div > img {
     width: 30em;
     border-radius: 0.33em;
@@ -972,6 +1173,17 @@ textarea {
 
   .portfolio-items > div {
     margin-bottom: 4em;
+  }
+
+  .single-portfolio > h2 {
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+  }
+
+  .single-portfolio > h4 {
+    font-family: "Baskervville SC", serif;
   }
 
   .single-portfolio-gallery {
@@ -986,27 +1198,52 @@ textarea {
   }
 
   .nav-menu-items {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     margin-top: 1.75em;
+  }
+
+  .contact > form > .form-button {
+    margin-bottom: 1em;
+  }
+
+  .main-content {
+    margin-bottom: -7em;
   }
 
   .articles {
     display: flex;
     flex-direction: column;
-    margin: 8em 2em 2em 2em;
+    margin: 8em 3em 2em 3em;
+    gap: 2em;
   }
 
   .articles > h1 {
-    margin-bottom: 1.5em;
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 2em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
   }
 
   .articles > div > img {
-    width: 30em;
+    width: 50em;
     border-radius: 0.33em;
+    margin-bottom: 3em;
+  }
+
+  .articles > h1 {
+    margin-bottom: 0.5em;
   }
 
   .articles > div > p:nth-of-type(2) {
-    margin-top: -4em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
   }
 
   .articles > div > p:nth-of-type(2)::first-letter {
@@ -1041,9 +1278,322 @@ textarea {
   .articles > div > hr {
     margin-bottom: 6em;
     margin-top: 6em;
+    display: none;
   }
 
   .articles > div:last-of-type > hr {
     display: none;
+  }
+
+  .loan-check {
+    margin-right: 1em;
+    color: green;
+    width: 0.7rem;
+  }
+
+  .loan-programs > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .loan-programs > div > div > hr {
+    margin-bottom: 1.5em;
+    width: 16em;
+    color: var(--third-color);
+    opacity: 0.6;
+  }
+
+  .loan-programs > div > div > ul {
+    list-style: none;
+    margin: -1em 1em 1.5em 0;
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em 0 1em 0;
+  }
+
+  .loan-programs > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-top: 3em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
+  .loan-programs > div > div {
+    width: 19em;
+    border: 0.5px solid var(--third-color);
+    margin-top: 3em;
+    padding: 0em 1.25em 4.25em 1.25em;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 30px rgb(153, 143, 190);
+  }
+
+  .loan-programs > div > div > h4 {
+    margin-top: 0.5em;
+    font-size: 1.25rem;
+    font-family: "Baskervville SC";
+    text-transform: uppercase;
+    color: var(--third-color);
+  }
+
+  .loan-programs > div {
+    margin-bottom: 6em;
+  }
+
+  .back-button {
+    margin-top: 15em;
+  }
+
+  .single-loan {
+    margin: 8em 3em;
+  }
+
+  .single-loan > h2 {
+    margin-bottom: 2em;
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+  }
+
+  .single-loan > img {
+    width: 20rem;
+  }
+
+  .about {
+    margin: 8em 2em 4em 2em;
+  }
+
+  .about > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 2em;
+    margin-top: 3em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
+  .about > div {
+    margin-bottom: 2em;
+  }
+
+  .about > div > img {
+    width: 25em;
+    border-radius: 50%;
+    margin-bottom: 3em;
+  }
+
+  .testimonials > h1 {
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    line-height: 2em;
+    color: var(--third-color);
+    margin-bottom: 2em;
+    margin-top: 3em;
+    background: url(/assets/NavItemBG.svg), no-repeat;
+    background-position: center;
+    background-size: 32em;
+  }
+
+  .quotation {
+    /* font-weight: bolder; */
+    font-size: 2em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+  }
+
+  .testimonials > div > h3 {
+    font-style: italic;
+  }
+
+  .testimonials > div > p,
+  p,
+  h3 {
+    margin-bottom: 1em;
+  }
+
+  .testimonials {
+    margin: 11em 4em 10em 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .articles > div > img {
+    width: 23em;
+  }
+
+  .articles > div > p:nth-of-type(1) {
+    text-decoration: underline;
+  }
+
+  .articles > div:nth-of-type(3) {
+    margin-bottom: 6em;
+  }
+
+  .articles > div > p:nth-of-type(2) {
+    padding: 0;
+  }
+
+  .articles > h1 {
+    margin-bottom: 0.2em;
+    font-size: 1.6rem;
+  }
+
+  .about > h1 {
+    font-size: 1.75rem;
+  }
+
+  .about > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  .about > div > img {
+    align-self: center;
+    width: 23em;
+  }
+
+  .about {
+    margin-top: 10em;
+    margin-bottom: 5.5em;
+  }
+
+  .about > div > h3 {
+    font-size: 1.75rem;
+  }
+
+  .testimonial-homepage > div > div {
+    padding: 6em 1em 3em 1em;
+  }
+
+  .testimonials {
+    margin-top: 10em;
+  }
+
+  .testimonials > h1 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-items > div > img {
+    width: 24em;
+    border-radius: 0.25em;
+  }
+
+  .portfolio > h1 {
+    font-size: 1.65rem;
+  }
+
+  .portfolio {
+    margin-top: 10em;
+  }
+
+  .contact-heading {
+    font-size: 1.65rem;
+    margin-top: 6em;
+  }
+
+  .loan-programs {
+    margin: 11em 2em 1em 2em;
+  }
+
+  .loan-programs > h1 {
+    font-size: 1.65rem;
+  }
+
+  .contact > form > p > input {
+    width: 25em;
+  }
+
+  .contact > form > p > textarea {
+    width: 25em;
+    height: 15em;
+  }
+
+  .nav-header {
+    position: fixed;
+    height: 90px;
+    background-color: var(--third-color);
+    background-blend-mode: overlay;
+    z-index: 10000;
+    border-bottom: rgb(36, 48, 68) 0.5px solid;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* .nav-logo {
+    margin-
+  } */
+
+  .nav-schedule-call {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 0.1em;
+    padding: 0.5em 0.7em;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    transition: color, background-color ease 0.2s;
+  }
+
+  p > input {
+    border: 1px solid black;
+    border-radius: 0.25em;
+    width: 20em;
+  }
+
+  textarea {
+    width: 20em;
+    height: 6em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+  }
+
+  .articles > div > img {
+    width: 20em;
+  }
+
+  .footer {
+    background-color: var(--third-color);
+    width: 100%;
+    /* padding: 0.5em 0; */
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-link > a {
+    color: var(--secondary-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .articles > div > img {
+    width: 40em;
+  }
+
+  .articles {
+    /* padding-right: 3em;\\ */
   }
 }

@@ -83,9 +83,13 @@ function Home({ testimonials, loanPrograms, portfolioItems }) {
           <div>
             {testimonials.slice(0, 4).map((t, index) => (
               <div key={index}>
-                <h3>{t.name}</h3>
+                <p className="testimonial-quote">
+                  <span className="quotation start">"</span>
+                  {t.review}
+                  <span className="quotation end">"</span>
+                </p>
                 <p>{"⭐".repeat(t.rating)}</p>
-                <p className="testimonial-quote">{t.review}</p>
+                <h3>- {t.name}</h3>
               </div>
             ))}
           </div>
