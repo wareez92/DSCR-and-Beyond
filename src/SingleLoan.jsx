@@ -4,7 +4,7 @@ function SingleLoan({ loanPrograms }) {
   const { loanId } = useParams();
   const loan = loanPrograms.find((l) => l.loanId === loanId);
   console.log("Found loan:", loan);
-  const url = "null";
+  const url = "https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08";
 
   if (!loan) {
     return (

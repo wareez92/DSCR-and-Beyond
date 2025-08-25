@@ -4,7 +4,7 @@ import { Link } from "react-router";
 function SinglePortfolio({ portfolioItems }) {
   const { portId } = useParams();
   const portfolioItem = portfolioItems.find((p) => p.portId === portId);
-  const url = "null";
+  const url = "https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08";
 
   if (!portfolioItem) {
     return (

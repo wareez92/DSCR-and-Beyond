@@ -29,7 +29,10 @@ function About() {
             and <span>speaks multiple languages, </span>including{" "}
             <span>French and English</span> —ensuring clear, effective
             communication every step of the way. Ready to invest with
-            confidence? <a href="/">Let’s talk DSCR loans today.</a>
+            confidence?{" "}
+            <a href="https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08">
+              Let’s talk DSCR loans today.
+            </a>
           </p>
         </div>
 

@@ -113,13 +113,13 @@ function App() {
       loanName: "DSCR Foreign National",
       icon: "/assets/ALT (2).svg",
       keyFeatures: [
-        "No Social Security Number Required",
+        "No U.S. Credit History Needed",
         "Property Income-Based Qualification",
         "Supports 1–8 Unit Investment Properties",
-        "Simplified Loan Process",
+        "Tailored for Non-U.S. Residents",
       ],
       description:
-        "DSCR ITIN loans are tailored for real estate investors who do not have a Social Security Number but hold an ITIN (Individual Taxpayer Identification Number). These loans use the property's rental income—not the borrower's personal income—to determine eligibility. With no need for traditional income documentation, DSCR ITIN loans provide a streamlined path to property ownership for non-U.S. citizens investing in 1–8 unit residential properties.",
+        "DSCR Foreign National loans are created for international investors who want to purchase or refinance U.S. rental properties but do not have U.S. residency, citizenship, or credit history. These loans evaluate the property's rental income instead of relying on the borrower's income or tax returns. With simplified documentation requirements, Foreign National loans offer a practical solution for global investors entering the U.S. real estate market.",
     },
   ];
 

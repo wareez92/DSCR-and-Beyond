@@ -24,7 +24,7 @@ function Contact() {
 
     emailjs
       .sendForm("contact_service", "contact_form", form.current, {
-        publicKey: "oEbHXx67VLh8Cpf1F",
+        publicKey: "z4dEOIH8kbfv97tZ5",
       })
       .then(
         () => {

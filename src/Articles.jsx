@@ -14,7 +14,12 @@ function Articles({ blogs }) {
             <hr className="article-line"></hr>
           </div>
         ))}
-        <Link to={"/"} className="form-button article-button">
+        <Link
+          to={
+            "https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08"
+          }
+          className="form-button article-button"
+        >
           Let's Connect
         </Link>
       </div>
