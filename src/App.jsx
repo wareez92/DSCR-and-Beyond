@@ -18,28 +18,31 @@ import About from "./About";
 function App() {
   const testimonials = [
     {
+      name: "Jayne Sigman",
+      rating: 5,
+      review:
+        "Sese was amazing! Highly recommend him and Guzzo & Co for any of your purchase needs. Process was smooth and professional and timely. Thank you Sese for helping us get our home!",
+      url: "https://www.google.com/maps/contrib/112556600282988954342/reviews?hl=en-US",
+    },
+    {
       name: "Betcy Elie",
       rating: 5,
       review:
         "I had the pleasure of working with Sese Ntem, Home Lending Advisor, at Guzzo & Co Inc..The saying... third time is a charm... is definitely true for my clients (C & H) who were ready to call it quit until I suggested they take one last chance with Sese. They agree and I am happy to report that my clients closed escrow on February 5, 2025. Yippee! Thanks to Sese and his Senior Processor, Amber Van Assche; my buyers were able to get their loan funded. It was a pleasure working with both of them; I love their professionalism and their great communication (whether by phone, text or email) with both my clients and me. Sese, you assured me that you would deliver.. and yes indeed, you delivered 😊 I look forward to working with both Sese and Amber again, in the near future. Thanks guys; job well done!",
     },
     {
-      name: "Jayne Sigman",
-      rating: 5,
-      review:
-        "Sese was amazing! Highly recommend him and Guzzo & Co for any of your purchase needs. Process was smooth and professional and timely. Thank you Sese for helping us get our home!",
-    },
-    {
       name: "Emma E. Recher",
       rating: 5,
       review:
         "A powerhouse team for a not-so-easy case... Sese and his loan processor worked tirelessly to make sure everything went as smoothly as possible. Every obstacle raised by the underwriter was swiftly handled by the loan processor, leading to the final result: securing the loan. A company I highly recommend, both for their efficiency and their kindness.",
+      url: "https://www.google.com/maps/contrib/100133890453473952536/reviews?hl=en-US",
     },
     {
       name: "Koru Kan",
       rating: 5,
       review:
         "Sese Ntem was a pleasure to work with. He helped us get a good rate, was super responsive (even during evenings and weekends) and helped us through the whole process with time to spare on our rushed closing. I would definitely recommend Sese Ntem and his team.",
+      url: "https://www.google.com/maps/contrib/111199029902182787868/reviews?hl=en-US",
     },
     {
       name: "Emmanuelle R",
@@ -52,6 +55,36 @@ function App() {
       rating: 5,
       review:
         "I wanted to take a moment to commend Sese NTEM and Rosa VASQUEZ for their exceptional service during the recent transaction. As a buyer's agent, I found their communication to be clear and timely, making the financing process smooth for my clients. They were responsive to inquiries and provided valuable guidance that eased any concerns. The competitive rates and straightforward terms were also appreciated by my clients. Overall, a great experience that I’d gladly recommend to future buyers!",
+      url: "https://www.google.com/maps/contrib/114346578128320789852/reviews?hl=en-US",
+    },
+
+    {
+      name: "Erika Villasana",
+      rating: 5,
+      review:
+        "I had the pleasure of working with SESE NTEM throughout the process of securing a loan for my home. From the start he walked me through every step of the process, answering all my questions and ensuring I understood the terms and requirements. I appreciated how they kept everything on track and ensured that all the necessary paperwork was completed in a timely manner. His commitment to making the process as smooth as possible proactively addressed potential issues, offered solutions, and made sure there were no surprises along the way. The entire process was efficient, and I highly recommend SESE NTEM to anyone looking for a reliable and professional loan processor.",
+      url: "https://www.google.com/maps/contrib/116384933902042303964/reviews?hl=en-US",
+    },
+    {
+      name: "Estelle Hughes",
+      rating: 5,
+      review:
+        "Mister sese is very nice he have patience he knows what is doing in recommend every one to work with him is very nice person when you got mister see on your file it's a blessing I'm telling you guys is the bomb I recommend 💯",
+      url: "https://www.google.com/maps/contrib/109285741726581595620/reviews?hl=en-US",
+    },
+    {
+      name: "Isiah Autry",
+      rating: 5,
+      review:
+        "SeSe was amazing. There were many hoops to jump through and several issues arose but SeSe was able to navigate the rough waters and get us to the finish line. I would recommend SeSe to anyone.",
+      url: "https://www.google.com/maps/contrib/100870612966951521035/reviews?hl=en-US",
+    },
+    {
+      name: "Kwaku Gamadeku",
+      rating: 5,
+      review:
+        "I had a pleasure to work with Sese Ntem with the purchase of my property. Sese was fast, attentive . He went above and beyond to get this loan approved. His dedication for his client is at another level. Day and night , Sese answered my calls if I have questions.. He was very patient and made sure everything falls into places at the right time. He is very knowledgeable at what he does. I will recommend Sese a 5 stars",
+      url: "https://www.google.com/maps/contrib/110452362169443550525/reviews?hl=en-US",
     },
   ];
 
@@ -135,11 +168,10 @@ function App() {
       portImage3:
         "https://photos.zillowstatic.com/fp/76e2f4aa5994e061e587704288c232a7-cc_ft_960.webp",
       portDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nobis doloremque sit atque ratione aliquam magni obcaecati consequatur corporis cupiditate dolorem necessitatibus impedit optio, dicta incidunt. Modi praesentium dignissimos dolore?",
+        "Charming 2‑bed, 1‑bath cottage in the heart of downtown Santa Barbara, built in 1917 and spanning approximately 800 ft². Located on a ~3,049 ft² lot, this home exudes character—with a cozy front porch, fruit trees, and two detached garages (one oversized). Recently refreshed plumbing (as of November 1, 2024), it’s an AS‑IS probate sale with great renovation potential and proximity to State Street, transit, and the 101 Freeway. ",
     },
     {
       portId: "2",
-
       portName: "222 W Chestnut Ave",
       portAddress: "222 W Chestnut Ave, Lompoc, CA 93436",
       portImage:
@@ -149,11 +181,10 @@ function App() {
       portImage3:
         "https://photos.zillowstatic.com/fp/476ecde45eeb0cd881c38e8c8f434d74-uncropped_scaled_within_1536_1152.webp",
       portDescription:
-        "Quam consectetur quaerat cum fuga sed architecto facere reiciendis saepe eos at, quo quidem cupiditate quisquam doloribus labore ad nesciunt aliquid dicta suscipit, quis debitis nisi? Impedit magni explicabo at?",
+        "Classic single‑story home built in 1926, offering ~1,404 ft² of living space on a generous ~10,454 ft² lot. With 3 bedrooms and 2 full baths, the home boasts hardwood and tile floors, a raised foundation, brick fireplace, and a detached, finished two‑car garage with storage. Mature fruit trees and lush hedges surround the property—the perfect blend of charm and ADU potential.",
     },
     {
       portId: "3",
-
       portName: "11004 Comiskey Lane",
       portAddress: "11004 Comiskey Ln, Charlotte, NC 28273",
       portImage:
@@ -163,11 +194,10 @@ function App() {
       portImage3:
         "https://photos.zillowstatic.com/fp/79ab4174cac03e7ac722296c307266b4-cc_ft_576.webp",
       portDescription:
-        "Perspiciatis, doloremque voluptatem soluta officia est rem accusantium libero sed eaque, maxime, veritatis saepe praesentium reiciendis expedita enim exercitationem ipsam eligendi minus omnis unde beatae recusandae! Exercitationem esse quidem maiores.",
+        "Modern 2‑story home built in 2016, with approximately 2,637 ft² of living space. Featuring 4 beds and 2.5 baths, plus a rare 3‑car garage, this Steele Creek gem includes hardwood floors, open‑plan layout, granite countertops, stainless appliances, an office/game room, a loft, and a luxurious primary suite with separate tub and shower. Situated on a cul‑de‑sac with no HOA, it offers elegant comfort and convenience.",
     },
     {
       portId: "4",
-
       portName: "1881 Millstream Holw, Conyers",
       portAddress: "1881 Millstream Holw, Conyers, GA 30012",
       portImage:
@@ -177,7 +207,7 @@ function App() {
       portImage3:
         "https://photos.zillowstatic.com/fp/21a728e3d2acfdaa4ac3712ddce95e5a-cc_ft_960.webp",
       portDescription:
-        "Perspiciatis, doloremque voluptatem soluta officia est rem accusantium libero sed eaque, maxime, veritatis saepe praesentium reiciendis expedita enim exercitationem ipsam eligendi minus omnis unde beatae recusandae! Exercitationem esse quidem maiores.",
+        "Contemporary townhouse constructed in 2018, offering ~1,589 ft² of finished living area with 3 bedrooms and 2.5 bathrooms. Thoughtfully designed with modern features—granite kitchen counters, stainless appliances, durable LVP flooring, walk‑in closets, and an attached 1‑car garage. Located in a sidewalked community, it includes HOA amenities at about $160/year and offers move‑in ready comfort.",
     },
   ];
 

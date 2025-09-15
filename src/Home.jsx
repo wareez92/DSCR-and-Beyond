@@ -71,7 +71,6 @@ function Home({ testimonials, loanPrograms, portfolioItems }) {
               </div>
             ))}
           </div>
-          <Link to="/Portfolio">View All</Link>
         </section>
 
         {/* Testimonials */}
@@ -89,7 +88,9 @@ function Home({ testimonials, loanPrograms, portfolioItems }) {
                   <span className="quotation end">"</span>
                 </p>
                 <p>{"⭐".repeat(t.rating)}</p>
-                <h3>- {t.name}</h3>
+                <Link to={t.url}>
+                  <h3>- {t.name}</h3>
+                </Link>
               </div>
             ))}
           </div>

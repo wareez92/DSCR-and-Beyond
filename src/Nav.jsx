@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
@@ -8,28 +8,47 @@ function Nav() {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Clean up on unmount
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
+
   return (
     <>
       <header className="nav-header">
         <div className="nav-content">
-          <button className="nav-schedule-call">Get Started</button>
-
           <img
-            src="/public/assets/DM Serif Display (4).svg"
+            src="/assets/DMSerifDisplay(4).svg"
             className="nav-logo"
             alt="dscr-logo"
           />
-          <button
-            className="nav-hamburger"
-            onClick={toggleMenu}
-            aria-expanded={isOpen}
-          >
-            {isOpen ? (
-              <IoClose className="nav-hamburger-icon" />
-            ) : (
-              <RxHamburgerMenu className="nav-hamburger-icon" />
-            )}
-          </button>
+          <div>
+            <a
+              href="https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08"
+              className="nav-schedule-call"
+            >
+              Get Started
+            </a>
+            <button
+              className="nav-hamburger"
+              onClick={toggleMenu}
+              aria-expanded={isOpen}
+            >
+              {isOpen ? (
+                <IoClose className="nav-hamburger-icon" />
+              ) : (
+                <RxHamburgerMenu className="nav-hamburger-icon" />
+              )}
+            </button>
+          </div>
           <ul className="nav-menu-items-2">
             <li>
               <Link to="/" onClick={toggleMenu}>
@@ -66,7 +85,12 @@ function Nav() {
                 About
               </Link>
             </li>
-            <button className="nav-schedule-call-2">Get Started</button>
+            <Link
+              to="https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08"
+              className="nav-schedule-call-2"
+            >
+              Get Started
+            </Link>
           </ul>
         </div>
       </header>

@@ -48,15 +48,24 @@ body {
   height: 5em;
 }
 
+.nav-content > div {
+  display: flex;
+  justify-self: end;
+}
+
 .nav-schedule-call {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 600;
+  font-family: "Baskervville SC", serif;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  /* font-weight: 600; */
   border-radius: 0.1em;
   padding: 0.5em 0.7em;
   background-color: transparent;
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
+  text-decoration: none;
   transition: color, background-color ease 0.2s;
+  margin-right: 2em;
 }
 
 .nav-schedule-call:hover {
@@ -89,7 +98,7 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  top: -100%;
+  top: -140%;
   z-index: 800;
   border: 1px solid var(--secondary-color);
   opacity: 1;
@@ -105,6 +114,8 @@ body {
   justify-content: center;
   height: 100vh;
   z-index: 800;
+  overflow: hidden;
+  position: fixed;
 }
 
 .nav-menu-items {
@@ -122,10 +133,10 @@ body {
 
 .nav-menu-items li {
   padding: 1.25em 0;
-  background: url(/assets/NavItemBG.svg), no-repeat;
+  /* background: url(/assets/NavItemBG.svg), no-repeat; */
   background-position: center;
   background-size: 24em;
-  text-shadow: 10px 5px 10px rgba(43, 46, 73, 0.432);
+  /* text-shadow: 10px 5px 10px rgba(43, 46, 73, 0.432); */
 }
 
 .nav-menu a {
@@ -545,6 +556,10 @@ p > input {
 }
 
 .form-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -555,6 +570,7 @@ p > input {
   letter-spacing: 0.2em;
   margin-bottom: 1em;
   margin-top: 4em;
+  background-color: transparent;
 }
 
 textarea {
@@ -656,7 +672,7 @@ textarea {
     opacity: 1;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     height: 100vh;
-    transition: top 0.8s ease-in-out;
+    transition: top 0.1s ease-in-out;
   }
 
   /* .nav-menu.show {
@@ -744,7 +760,7 @@ textarea {
 
   .nav-schedule-call-2 {
     border-radius: 0.1em;
-    padding: 0.5em 0.7em;
+    padding: 0.7em 0.7em;
     background-color: transparent;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
@@ -752,6 +768,10 @@ textarea {
     opacity: 0.65;
     transition: opacity 0.3 ease;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    font-size: 0.85rem;
   }
 
   .nav-schedule-call-2:hover {
@@ -887,9 +907,6 @@ textarea {
     width: 50em;
     height: 2em;
   }
-
-
-
 
   textarea {
     width: 50em;
@@ -1040,7 +1057,6 @@ textarea {
 
   .about > div > img {
     border-radius: 2%;
-    
   }
 
   .about > div > h3 {
@@ -1128,6 +1144,14 @@ textarea {
 }
 
 @media (max-width: 1111.11px) {
+  body.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+  }
+
   .back-button {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
@@ -1451,11 +1475,11 @@ textarea {
 
   .articles > h1 {
     margin-bottom: 0.2em;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .about > h1 {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
   }
 
   .about > div {
@@ -1487,7 +1511,7 @@ textarea {
   }
 
   .testimonials > h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .portfolio-items > div > img {
@@ -1513,7 +1537,7 @@ textarea {
   }
 
   .loan-programs > h1 {
-    font-size: 1.65rem;
+    font-size: 1.3rem;
   }
 
   .contact > form > p > input {
@@ -1545,14 +1569,16 @@ textarea {
   } */
 
   .nav-schedule-call {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: "Baskervville SC", serif;
+    text-transform: uppercase;
+    font-size: 0.85rem;
     border-radius: 0.1em;
     padding: 0.5em 0.7em;
     background-color: transparent;
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
     transition: color, background-color ease 0.2s;
+    text-decoration: none;
   }
 
   p > input {
@@ -1595,5 +1621,76 @@ textarea {
 
   .articles {
     /* padding-right: 3em;\\ */
+  }
+}
+
+@media (max-width: 376px) {
+  .nav-menu-items {
+    font-size: 1.25rem;
+    margin-top: 3em;
+  }
+
+  .single-portfolio-gallery > img {
+    width: 22em;
+  }
+
+  .portfolio-items > div > img {
+    width: 21em;
+    margin-left: -0.25em;
+  }
+}
+
+@media (max-width: 391px) {
+  .nav-menu-items {
+    font-size: 1.1rem;
+    margin-top: 3em;
+  }
+
+  .single-portfolio-gallery > img {
+    width: 22em;
+  }
+
+  .portfolio-items > div > img {
+    width: 21em;
+    margin-left: 0.2em;
+  }
+
+  .loan-programs > div > div > img {
+    width: 10em;
+  }
+
+  .single-loan > img {
+    width: 18em;
+  }
+
+  .single-loan > p {
+    margin-top: 3em;
+  }
+
+  .single-loan > p:last-of-type {
+    margin-bottom: 4em;
+  }
+
+  .about > div > img {
+    width: 20em;
+  }
+
+  .articles > div > img {
+    width: 20em;
+    margin-left: -0.75em;
+    margin-bottom: -0.75em;
+  }
+
+  .contact {
+    margin-left: -0.3em;
+  }
+
+  .nav-schedule-call {
+    font-size: 0.7rem;
+  }
+
+  .nav-logo {
+    width: 15em;
+    margin-left: -3.6em;
   }
 }
