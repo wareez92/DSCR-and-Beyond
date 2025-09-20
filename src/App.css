@@ -1709,7 +1709,7 @@ textarea {
   .nav-menu-items-2 {
     display: flex;
     list-style: none;
-    gap: 0.7em;
+    gap: 0.6em;
   }
 
   .nav-content {
@@ -1720,7 +1720,7 @@ textarea {
   .nav-menu-items-2 li a {
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: 0.7em;
+    font-size: 0.6em;
     opacity: 0.65;
     transition: opacity 0.3s ease-in-out;
     padding: 0 0 0.05em 0;
@@ -1751,12 +1751,12 @@ textarea {
   }
 
   .nav-logo {
-    margin-right: -3em;
+    margin-right: -4em;
     width: 12em;
   }
 
   .nav-header {
-    padding: 0 6em 0 1.5em;
+    padding: 0 6em 0 1em;
   }
 }
 
