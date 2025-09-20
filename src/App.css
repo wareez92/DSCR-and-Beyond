@@ -1756,7 +1756,7 @@ textarea {
   }
 
   .nav-header {
-    padding: 0 6em 0 1em;
+    padding: 0 6em 0 0;
   }
 }
 
