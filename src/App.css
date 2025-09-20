@@ -1694,7 +1694,7 @@ textarea {
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 700px ) and (min-width: 500px) {
   .nav-menu-items {
     display: none;
   }
