@@ -1694,7 +1694,11 @@ textarea {
   }
 }
 
-@media (max-height: 700px ) and (min-width: 500px) {
+@media (max-height: 700px) and (min-width: 500px) {
+  .nav-menu.show {
+    display: none;
+  }
+
   .nav-menu-items {
     display: none;
   }
@@ -1705,13 +1709,18 @@ textarea {
   .nav-menu-items-2 {
     display: flex;
     list-style: none;
-    gap: .7em;
+    gap: 0.7em;
+  }
+
+  .nav-content {
+    margin: 0 5em 0 0;
+    padding: 0 2em 0 2.5em
   }
 
   .nav-menu-items-2 li a {
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: .7em;
+    font-size: 0.7em;
     opacity: 0.65;
     transition: opacity 0.3s ease-in-out;
     padding: 0 0 0.05em 0;
@@ -1742,8 +1751,6 @@ textarea {
   }
 
   .nav-logo {
-
     margin-right: -3em;
-    margin-left: -3em;
   }
 }
