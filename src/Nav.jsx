@@ -8,18 +8,20 @@ function Nav() {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
+useEffect(() => {
+  const inExceptionBreakpoint =
+    window.innerHeight <= 700 && window.innerWidth >= 500;
 
-    // Clean up on unmount
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [isOpen]);
+  if (isOpen && !inExceptionBreakpoint) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
+
+  return () => {
+    document.body.classList.remove("no-scroll");
+  };
+}, [isOpen]);
 
   return (
     <>
