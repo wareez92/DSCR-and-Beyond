@@ -1694,7 +1694,7 @@ textarea {
   }
 }
 
-@media (max-height: 844px) and (min-width: 500px) {
+@media (max-height: 844px) and (max-width: 500px) {
   .nav-menu.show {
     display: none;
   }
@@ -1713,7 +1713,7 @@ textarea {
   }
 
   .nav-content {
-    margin: 0 e2m 0 0;
+    margin: 0 2em 0 0;
     /* padding: 0 2em 0 2.5em */
   }
 
