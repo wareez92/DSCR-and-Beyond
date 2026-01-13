@@ -16,6 +16,7 @@ import Articles from "./Articles";
 import About from "./About";
 
 function App() {
+  const [lang, setLang] = useState("en");
   const testimonials = [
     {
       name: "Jayne Sigman",
@@ -256,9 +257,141 @@ function App() {
     },
   ];
 
+  const translations = {
+    nav: {
+      en: {
+        home: "Home",
+        loanPrograms: "Loan Programs",
+        testimonials: "Testimonials",
+        contact: "Contact",
+        portfolio: "Portfolio",
+        articles: "Articles",
+        about: "About",
+        getStarted: "Get Started",
+      },
+      fr: {
+        home: "Accueil",
+        loanPrograms: "Programmes de prêts",
+        testimonials: "Témoignages",
+        contact: "Contact",
+        portfolio: "Portfolio",
+        articles: "Articles",
+        about: "À propos",
+        getStarted: "Commencer",
+      },
+      es: {
+        home: "Inicio",
+        loanPrograms: "Programas de préstamos",
+        testimonials: "Testimonios",
+        contact: "Contacto",
+        portfolio: "Portafolio",
+        articles: "Artículos",
+        about: "Sobre nosotros",
+        getStarted: "Empezar",
+      },
+    },
+
+    about: {
+      en: {
+        h1: "About",
+        h3: {
+          meet: "Meet",
+          specialist: "Your DSCR Loan Specialist",
+        },
+        p: {
+          intro:
+            "Sese helps real estate investors secure the financing they need—quickly and confidently. Specializing in",
+          dscr: "DSCR (Debt-Service Coverage Ratio) loans",
+          qualify: "he works with clients who qualify based on",
+          rental: "rental property income",
+          not: "not traditional employment documentation.",
+          known: "Known for consistent,",
+          closings: "successful closings,",
+          delivers: "delivers creative solutions for both",
+          investors: "first-time and experienced investors",
+          responsive: "responsiveness, attention to detail",
+          ability: "and ability to",
+          simplify: "simplify the loan process from start to finish",
+          polyglot:
+            "A skilled polyglot, Sese connects easily with clients across cultures and speaks multiple languages, including",
+
+          languages: "French and English",
+          closing:
+  ",ensuring clear, effective communication every step of the way. Ready to invest with confidence?",
+
+          cta: "Let’s talk DSCR loans today.",
+        },
+        back: "Back",
+      },
+
+      fr: {
+        h1: "À propos",
+        h3: {
+          meet: "Rencontrez",
+          specialist: "Votre spécialiste en prêts DSCR",
+        },
+        p: {
+          intro:
+            "Sese aide les investisseurs immobiliers à obtenir le financement dont ils ont besoin — rapidement et en toute confiance. Spécialisé dans",
+          dscr: "les prêts DSCR (Debt-Service Coverage Ratio)",
+          qualify: "il travaille avec des clients qualifiés selon",
+          rental: "les revenus locatifs",
+          not: "et non les documents d’emploi traditionnels.",
+          known: "Reconnu pour sa constance,",
+          closings: "transactions réussies,",
+          delivers: "propose des solutions créatives pour les",
+          investors: "investisseurs débutants et expérimentés",
+          responsive: "réactivité et souci du détail",
+          ability: "et la capacité de",
+          simplify: "simplifier le processus de prêt du début à la fin",
+          polyglot:
+            "Polyglotte expérimenté, Sese communique facilement avec des clients de différentes cultures et parle plusieurs langues, dont",
+
+          languages: "le français et l’anglais",
+          closing:
+  ",garantissant une communication claire et efficace à chaque étape. Prêt à investir en toute confiance ?",
+
+          cta: "Parlons de prêts DSCR dès aujourd’hui.",
+        },
+        back: "Retour",
+      },
+
+      es: {
+        h1: "Acerca de",
+        h3: {
+          meet: "Conoce a",
+          specialist: "Tu especialista en préstamos DSCR",
+        },
+        p: {
+          intro:
+            "Sese ayuda a los inversionistas inmobiliarios a obtener el financiamiento que necesitan de manera rápida y segura. Especializado en",
+          dscr: "préstamos DSCR (Debt-Service Coverage Ratio)",
+          qualify: "trabaja con clientes que califican según",
+          rental: "los ingresos de alquiler",
+          not: "y no la documentación laboral tradicional.",
+          known: "Conocido por su constancia,",
+          closings: "cierres exitosos,",
+          delivers: "ofrece soluciones creativas tanto para",
+          investors: "inversionistas nuevos y experimentados",
+          responsive: "capacidad de respuesta y atención al detalle",
+          ability: "y la capacidad de",
+          simplify: "simplificar el proceso de préstamo de principio a fin",
+          polyglot:
+            "Como políglota experimentado, Sese se conecta fácilmente con clientes de diferentes culturas y habla varios idiomas, incluyendo",
+  closing:
+  ",garantizando una comunicación clara y eficaz en cada paso del proceso. ¿Listo para invertir con confianza?",
+
+          languages: "francés e inglés",
+          cta: "Hablemos de préstamos DSCR hoy.",
+        },
+        back: "Volver",
+      },
+    },
+  };
+
   return (
     <>
-      <Nav />
+      <Nav translations={translations} lang={lang} setLang={setLang} />
       <Routes>
         <Route
           path="/"
@@ -267,29 +400,58 @@ function App() {
               testimonials={testimonials}
               loanPrograms={loanPrograms}
               portfolioItems={portfolioItems}
+              translations={translations}
             />
           }
         />
-        <Route path="/loans" element={<Loans loanPrograms={loanPrograms} />} />
+        <Route
+          path="/loans"
+          element={
+            <Loans loanPrograms={loanPrograms} translations={translations} />
+          }
+        />
         <Route
           path="/Testimonials"
-          element={<Testimonials testimonials={testimonials} />}
+          element={
+            <Testimonials
+              testimonials={testimonials}
+              translations={translations}
+            />
+          }
         />
         <Route
           path="/Portfolio"
-          element={<Portfolio portfolioItems={portfolioItems} />}
+          element={
+            <Portfolio
+              portfolioItems={portfolioItems}
+              translations={translations}
+            />
+          }
         />
         <Route path="/Contact" element={<Contact />} />
         <Route
           path="/loans/:loanId"
-          element={<SingleLoan loanPrograms={loanPrograms} />}
+          element={
+            <SingleLoan
+              loanPrograms={loanPrograms}
+              translations={translations}
+            />
+          }
         />
         <Route
           path="/portfolio/:portId"
-          element={<SinglePortfolio portfolioItems={portfolioItems} />}
+          element={
+            <SinglePortfolio
+              portfolioItems={portfolioItems}
+              translations={translations}
+            />
+          }
         />
         <Route path="/Articles" element={<Articles blogs={blogs} />} />
-        <Route path="/About" element={<About />} />
+        <Route
+          path="/About"
+          element={<About translations={translations} lang={lang} />}
+        />
       </Routes>
       <Footer />
     </>

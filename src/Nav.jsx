@@ -2,26 +2,32 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import useHtmlLang from "./Lang";
 
-function Nav() {
+function Nav({ lang, setLang, translations}) {
+  
+
+  useHtmlLang(lang);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
-useEffect(() => {
-  const inExceptionBreakpoint =
-    window.innerHeight <= 700 && window.innerWidth >= 500;
 
-  if (isOpen && !inExceptionBreakpoint) {
-    document.body.classList.add("no-scroll");
-  } else {
-    document.body.classList.remove("no-scroll");
-  }
+  useEffect(() => {
+    const inExceptionBreakpoint =
+      window.innerHeight <= 700 && window.innerWidth >= 500;
 
-  return () => {
-    document.body.classList.remove("no-scroll");
-  };
-}, [isOpen]);
+    if (isOpen && !inExceptionBreakpoint) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isOpen]);
 
   return (
     <>
@@ -37,7 +43,7 @@ useEffect(() => {
               href="https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08"
               className="nav-schedule-call"
             >
-              Get Started
+              {translations.nav[lang].getStarted}
             </a>
             <button
               className="nav-hamburger"
@@ -54,45 +60,50 @@ useEffect(() => {
           <ul className="nav-menu-items-2">
             <li>
               <Link to="/" onClick={toggleMenu}>
-                Home
+                {translations.nav[lang].home}
               </Link>
             </li>
             <li>
               <Link to="/Loans" onClick={toggleMenu}>
-                Loan Programs{" "}
+                {translations.nav[lang].loanPrograms}{" "}
               </Link>
             </li>
             <li>
               <Link to="/Testimonials" onClick={toggleMenu}>
-                Testimonials
+                {translations.nav[lang].testimonials}
               </Link>
             </li>
             <li>
               <Link to="/Contact" onClick={toggleMenu}>
-                Contact
+                {translations.nav[lang].contact}
               </Link>
             </li>
             <li>
               <Link to="/Portfolio" onClick={toggleMenu}>
-                Portfolio
+                {translations.nav[lang].portfolio}
               </Link>
             </li>
             <li>
               <Link to="/Articles" onClick={toggleMenu}>
-                Articles
+                {translations.nav[lang].articles}
               </Link>
             </li>
             <li>
               <Link to="/About" onClick={toggleMenu}>
-                About
+                {translations.nav[lang].about}
               </Link>
             </li>
             <Link
               to="https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08"
               className="nav-schedule-call-2"
             >
-              Get Started
+              {translations.nav[lang].getStarted}
             </Link>
+            <select value={lang} onChange={(e) => setLang(e.target.value)}>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+            </select>
           </ul>
         </div>
       </header>
