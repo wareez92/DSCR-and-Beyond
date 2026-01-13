@@ -217,45 +217,137 @@ function App() {
       blogId: "1",
       image:
         "https://designerwoodflooring.com/wp-content/uploads/2022/07/house.jpg",
-      caption: "Understanding DSCR Loans for Smarter Home Lending",
-      fullPost: `
-      Whether you're a seasoned investor or new to real estate, understanding **DSCR (Debt Service Coverage Ratio) loans** is key to expanding your portfolio without the hassle of traditional income documentation. Unlike conventional mortgages that focus on your personal income and credit history, DSCR loans evaluate the income potential of the investment property itself. If the property generates enough rental income to cover the monthly debt payment, you’re well on your way to qualifying.
-
-      This approach is ideal for self-employed borrowers, LLCs, and investors who may not show significant income on paper. DSCR loans are also faster to close, since they rely on property cash flow instead of digging through tax returns and employment history. You can use them to purchase new properties or refinance existing ones to free up cash for future investments.
-
-      Curious about how a DSCR loan can work for you? Schedule a call today to get expert guidance and customized lending solutions tailored to your goals.
-    `,
       datePosted: "2025-07-18",
+      content: {
+        en: {
+          caption: "Understanding DSCR Loans for Smarter Home Lending",
+          fullPost: `
+Whether you're a seasoned investor or new to real estate, understanding **DSCR (Debt Service Coverage Ratio) loans** is key to expanding your portfolio without the hassle of traditional income documentation. Unlike conventional mortgages that focus on your personal income and credit history, DSCR loans evaluate the income potential of the investment property itself. If the property generates enough rental income to cover the monthly debt payment, you’re well on your way to qualifying.
+
+This approach is ideal for self-employed borrowers, LLCs, and investors who may not show significant income on paper. DSCR loans are also faster to close, since they rely on property cash flow instead of digging through tax returns and employment history. You can use them to purchase new properties or refinance existing ones to free up cash for future investments.
+
+Curious about how a DSCR loan can work for you? Schedule a call today to get expert guidance and customized lending solutions tailored to your goals.
+        `,
+        },
+        fr: {
+          caption:
+            "Comprendre les prêts DSCR pour un financement immobilier plus intelligent",
+          fullPost: `
+Que vous soyez un investisseur expérimenté ou nouveau dans l’immobilier, comprendre les **prêts DSCR (Debt Service Coverage Ratio)** est essentiel pour développer votre portefeuille sans les contraintes de la documentation de revenus traditionnelle. Contrairement aux prêts hypothécaires classiques, les prêts DSCR évaluent la capacité du bien à générer des revenus locatifs suffisants pour couvrir les paiements mensuels.
+
+Cette approche est idéale pour les travailleurs indépendants, les sociétés (LLC) et les investisseurs qui ne présentent pas toujours des revenus élevés sur le papier. Les prêts DSCR sont également plus rapides à clôturer, car ils reposent sur la trésorerie du bien plutôt que sur les déclarations fiscales et l’historique d’emploi. Ils peuvent être utilisés pour acheter de nouvelles propriétés ou refinancer des biens existants afin de libérer des liquidités pour de futurs investissements.
+
+Vous souhaitez savoir comment un prêt DSCR peut fonctionner pour vous ? Planifiez un appel dès aujourd’hui pour recevoir des conseils personnalisés.
+        `,
+        },
+        es: {
+          caption:
+            "Comprender los préstamos DSCR para una financiación inmobiliaria más inteligente",
+          fullPost: `
+Ya seas un inversionista experimentado o nuevo en bienes raíces, comprender los **préstamos DSCR (Debt Service Coverage Ratio)** es clave para expandir tu portafolio sin la molestia de la documentación tradicional de ingresos. A diferencia de las hipotecas convencionales, los préstamos DSCR evalúan el potencial de ingresos de la propiedad en lugar de tu historial laboral o crediticio.
+
+Este enfoque es ideal para trabajadores independientes, empresas (LLC) e inversionistas que no muestran ingresos altos en papel. Los préstamos DSCR también se cierran más rápido, ya que se basan en el flujo de caja de la propiedad en lugar de declaraciones de impuestos o comprobantes de empleo. Puedes usarlos para comprar nuevas propiedades o refinanciar las existentes y así liberar capital para futuras inversiones.
+
+¿Te interesa saber cómo un préstamo DSCR puede ayudarte? Agenda una llamada hoy mismo para recibir asesoría personalizada.
+        `,
+        },
+      },
     },
+
     {
       blogId: "2",
       image:
         "https://www.bocadolobo.com/en/inspiration-and-ideas/wp-content/uploads/2022/04/B-05-scaled-1.jpg",
-      caption: "What Is a DSCR ITIN Loan and Who Is It For?",
-      fullPost: `
-      Many people assume that investing in U.S. real estate requires a Social Security Number, but that's no longer the case thanks to **DSCR ITIN loans**. These specialized loans are designed for individuals who file taxes using an **Individual Taxpayer Identification Number (ITIN)** instead of an SSN. This is a game-changer for foreign nationals, immigrants, and non-resident investors looking to purchase income-producing properties in the U.S.
-
-      Just like traditional DSCR loans, ITIN-based DSCR loans evaluate the cash flow of the property rather than your employment or credit profile. That means you can qualify based on how much rental income the property generates — not on whether you have a W-2 job or a U.S.-based credit score. These loans are flexible, scalable, and built to support long-term investing strategies.
-
-      If you're an ITIN holder ready to invest or refinance in U.S. real estate, Schedule a call to find out how we can help you unlock these opportunities.
-    `,
       datePosted: "2025-07-18",
+      content: {
+        en: {
+          caption: "What Is a DSCR ITIN Loan and Who Is It For?",
+          fullPost: `
+Many people assume that investing in U.S. real estate requires a Social Security Number, but that's no longer the case thanks to **DSCR ITIN loans**. These specialized loans are designed for individuals who file taxes using an **Individual Taxpayer Identification Number (ITIN)** instead of an SSN.
+
+Just like traditional DSCR loans, ITIN-based DSCR loans evaluate the cash flow of the property rather than your employment or credit profile. That means you qualify based on rental income, not on having a W-2 job or U.S. credit score.
+
+If you're an ITIN holder ready to invest or refinance in U.S. real estate, schedule a call to learn how we can help.
+        `,
+        },
+        fr: {
+          caption:
+            "Qu’est-ce qu’un prêt DSCR avec ITIN et à qui s’adresse-t-il ?",
+          fullPost: `
+Beaucoup de personnes pensent qu’il faut un numéro de sécurité sociale pour investir dans l’immobilier aux États-Unis, mais ce n’est plus vrai grâce aux **prêts DSCR avec ITIN**. Ces prêts sont conçus pour les personnes déclarant leurs impôts avec un **ITIN**.
+
+Comme les prêts DSCR classiques, les prêts DSCR ITIN se basent sur les revenus locatifs du bien et non sur votre emploi ou votre crédit. Cela vous permet de vous qualifier en fonction du cash-flow généré par la propriété.
+
+Si vous êtes titulaire d’un ITIN et souhaitez investir ou refinancer, planifiez un appel pour en savoir plus.
+        `,
+        },
+        es: {
+          caption: "¿Qué es un préstamo DSCR con ITIN y para quién es?",
+          fullPost: `
+Muchas personas creen que se necesita un número de Seguro Social para invertir en bienes raíces en EE. UU., pero eso ya no es cierto gracias a los **préstamos DSCR con ITIN**. Estos préstamos están diseñados para personas que declaran impuestos con un **ITIN**.
+
+Al igual que los préstamos DSCR tradicionales, estos préstamos se basan en los ingresos de la propiedad y no en tu empleo o historial crediticio. Eso significa que calificas según el alquiler que genera la propiedad.
+
+Si tienes ITIN y quieres invertir o refinanciar, agenda una llamada para conocer tus opciones.
+        `,
+        },
+      },
     },
+
     {
       blogId: "3",
       image:
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80",
-      caption: "Top Benefits of 1–4 Unit DSCR Loans for Investors",
-      fullPost: `
-      Real estate investors looking to scale efficiently should seriously consider the benefits of **1–4 unit DSCR loans**. These loans are crafted specifically for smaller residential properties like single-family homes, duplexes, triplexes, and fourplexes. The major advantage? They’re based entirely on **property income performance**, not your personal tax returns or income documentation.
-
-      These DSCR loans are a favorite among full-time investors and part-time landlords because they streamline the approval process and provide a pathway to **build or expand a rental portfolio** with minimal red tape. Whether you're refinancing a cash-flowing asset or acquiring a new one, 1–4 unit DSCR loans offer fast funding, low documentation, and long-term financial flexibility.
-
-      Want to see how a 1–4 unit DSCR loan fits into your strategy? Schedule a call to speak with one of our loan specialists who can guide you through the process step-by-step.
-    `,
       datePosted: "2025-07-18",
+      content: {
+        en: {
+          caption: "Top Benefits of 1–4 Unit DSCR Loans for Investors",
+          fullPost: `
+Real estate investors looking to scale efficiently should consider **1–4 unit DSCR loans**. These loans are designed for properties like single-family homes, duplexes, triplexes, and fourplexes.
+
+They are based entirely on the property’s income rather than personal tax returns, allowing investors to grow portfolios with minimal paperwork and faster approvals.
+
+Want to see how a 1–4 unit DSCR loan fits into your strategy? Schedule a call today.
+        `,
+        },
+        fr: {
+          caption:
+            "Les avantages des prêts DSCR pour les propriétés de 1 à 4 unités",
+          fullPost: `
+Les investisseurs immobiliers qui souhaitent se développer efficacement devraient considérer les **prêts DSCR pour 1 à 4 unités**. Ces prêts couvrent les maisons unifamiliales, duplex, triplex et immeubles de quatre logements.
+
+Ils reposent sur les revenus locatifs du bien plutôt que sur vos revenus personnels, ce qui permet une approbation plus rapide et moins de paperasse.
+
+Planifiez un appel pour découvrir comment cela peut s’intégrer à votre stratégie.
+        `,
+        },
+        es: {
+          caption:
+            "Beneficios principales de los préstamos DSCR para propiedades de 1 a 4 unidades",
+          fullPost: `
+Los inversionistas que buscan crecer de manera eficiente deben considerar los **préstamos DSCR para propiedades de 1 a 4 unidades**. Estos préstamos cubren casas unifamiliares, dúplex, tríplex y cuádruplex.
+
+Se basan en los ingresos de la propiedad y no en tus impuestos personales, lo que permite aprobaciones más rápidas y menos papeleo.
+
+Agenda una llamada para saber cómo estos préstamos pueden ayudarte a crecer.
+        `,
+        },
+      },
     },
   ];
+
+  const connect = {
+    en: {
+      cta: "Let’s Connect",
+    },
+    fr: {
+      cta: "Connectons-nous",
+    },
+    es: {
+      cta: "Conectemos",
+    },
+  };
+
 
   const translations = {
     nav: {
@@ -317,7 +409,7 @@ function App() {
 
           languages: "French and English",
           closing:
-  ",ensuring clear, effective communication every step of the way. Ready to invest with confidence?",
+            ",ensuring clear, effective communication every step of the way. Ready to invest with confidence?",
 
           cta: "Let’s talk DSCR loans today.",
         },
@@ -349,7 +441,7 @@ function App() {
 
           languages: "le français et l’anglais",
           closing:
-  ",garantissant une communication claire et efficace à chaque étape. Prêt à investir en toute confiance ?",
+            ",garantissant une communication claire et efficace à chaque étape. Prêt à investir en toute confiance ?",
 
           cta: "Parlons de prêts DSCR dès aujourd’hui.",
         },
@@ -378,8 +470,8 @@ function App() {
           simplify: "simplificar el proceso de préstamo de principio a fin",
           polyglot:
             "Como políglota experimentado, Sese se conecta fácilmente con clientes de diferentes culturas y habla varios idiomas, incluyendo",
-  closing:
-  ",garantizando una comunicación clara y eficaz en cada paso del proceso. ¿Listo para invertir con confianza?",
+          closing:
+            ",garantizando una comunicación clara y eficaz en cada paso del proceso. ¿Listo para invertir con confianza?",
 
           languages: "francés e inglés",
           cta: "Hablemos de préstamos DSCR hoy.",
@@ -447,7 +539,12 @@ function App() {
             />
           }
         />
-        <Route path="/Articles" element={<Articles blogs={blogs} />} />
+        <Route
+          path="/Articles"
+          element={
+            <Articles translations={translations} blogs={blogs} lang={lang} connect={connect} />
+          }
+        />
         <Route
           path="/About"
           element={<About translations={translations} lang={lang} />}
