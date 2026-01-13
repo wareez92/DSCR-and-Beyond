@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-function Portfolio({ portfolioItems }) {
+function Portfolio({ portfolioItems, viewDetails ,lang, translations}) {
   return (
     <>
       <div className="portfolio">
@@ -10,13 +10,13 @@ function Portfolio({ portfolioItems }) {
               <img src={p.portImage} alt={p.portName} />
               <h2>{p.portName}</h2>
               <Link className="form-button" to={`/portfolio/${p.portId}`}>
-                View Details
-              </Link>
+              {viewDetails[lang].viewDetails}
+                            </Link>
             </div>
           ))}
         </div>
         <Link className="back-button" to="/">
-          Back
+          {translations.about[lang].back}
         </Link>
       </div>
     </>

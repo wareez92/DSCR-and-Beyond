@@ -3,7 +3,7 @@ import emailjs, { send } from "@emailjs/browser";
 import { Link } from "react-router";
 Link;
 
-function Contact() {
+function Contact({contactForm, lang}) {
   const form = useRef();
 
   const [success, setSuccess] = useState(false);
@@ -42,24 +42,24 @@ function Contact() {
     return (
       <>
         <h6>
-          Your message has been received! We will get back to you quickly!
+          {contactForm[lang].h6}
         </h6>
       </>
     );
   }
   return (
     <>
-      <h1 className="contact-heading">Contact</h1>
+      <h1 className="contact-heading">{contactForm[lang].h1}</h1>
 
       <div className="contact">
         <form ref={form} onSubmit={sendEmail}>
           <p>
-            <label>Name</label>
+            <label>{contactForm[lang].name}</label>
             <br />
             <input type="text" name="user_name" placeholder="John Smith" />
           </p>
           <p>
-            <label>Email</label>
+            <label>{contactForm[lang].email}</label>
             <br />
             <input
               type="email"
@@ -68,12 +68,12 @@ function Contact() {
             />
           </p>
           <p>
-            <label>Message</label>
+            <label>{contactForm[lang].message}</label>
             <br />
             <textarea name="message" />
           </p>
           <button type="submit" class="form-button">
-            Send
+            {contactForm[lang].send}
           </button>
         </form>
       </div>
