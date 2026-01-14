@@ -3,7 +3,7 @@ import emailjs, { send } from "@emailjs/browser";
 import { Link } from "react-router";
 Link;
 
-function Contact({contactForm, lang}) {
+function Contact({ contactForm, lang, translations }) {
   const form = useRef();
 
   const [success, setSuccess] = useState(false);
@@ -41,15 +41,13 @@ function Contact({contactForm, lang}) {
   if (success) {
     return (
       <>
-        <h6>
-          {contactForm[lang].h6}
-        </h6>
+        <h6>{contactForm[lang].h6}</h6>
       </>
     );
   }
   return (
     <>
-      <h1 className="contact-heading">{contactForm[lang].h1}</h1>
+      <h1 className="contact-heading">{translations.nav[lang].contact}</h1>
 
       <div className="contact">
         <form ref={form} onSubmit={sendEmail}>
@@ -72,7 +70,7 @@ function Contact({contactForm, lang}) {
             <br />
             <textarea name="message" />
           </p>
-          <button type="submit" class="form-button">
+          <button type="submit" className="form-button">
             {contactForm[lang].send}
           </button>
         </form>

@@ -582,6 +582,8 @@ Agenda una llamada para saber cómo estos préstamos pueden ayudarte a crecer.
               loanPrograms={loanPrograms}
               portfolioItems={portfolioItems}
               translations={translations}
+              lang={lang}
+              contactForm={contactForm}
             />
           }
         />
@@ -613,7 +615,13 @@ Agenda una llamada para saber cómo estos préstamos pueden ayudarte a crecer.
         />
         <Route
           path="/Contact"
-          element={<Contact contactForm={contactForm} lang={lang} />}
+          element={
+            <Contact
+              contactForm={contactForm}
+              lang={lang}
+              translations={translations}
+            />
+          }
         />
         <Route
           path="/loans/:loanId"

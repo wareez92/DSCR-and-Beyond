@@ -3,7 +3,7 @@ function Portfolio({ portfolioItems, viewDetails ,lang, translations}) {
   return (
     <>
       <div className="portfolio">
-        <h1>Portfolio</h1>
+        <h1>{translations.nav[lang].portfolio}</h1>
         <div className="portfolio-items">
           {portfolioItems.map((p, i) => (
             <div key={i}>

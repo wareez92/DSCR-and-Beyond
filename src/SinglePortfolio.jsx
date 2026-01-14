@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import { Link } from "react-router";
 
-function SinglePortfolio({ portfolioItems, lang, translations }) {
+function SinglePortfolio({ portfolioItems, lang, translations, viewDetails }) {
   const { portId } = useParams();
   const portfolioItem = portfolioItems.find((p) => p.portId === portId);
   const url = "https://calendly.com/sese-ntem/30min?preview_source=et_card&month=2025-08";

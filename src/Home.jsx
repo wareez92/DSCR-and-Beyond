@@ -3,7 +3,14 @@ import Loans from "./Loans";
 import Contact from "./Contact";
 import { FaRegBuilding } from "react-icons/fa";
 
-function Home({ testimonials, loanPrograms, portfolioItems }) {
+function Home({
+  testimonials,
+  loanPrograms,
+  portfolioItems,
+  lang,
+  translations,
+  contactForm
+}) {
   return (
     <>
       <div className="main-content">
@@ -102,7 +109,11 @@ function Home({ testimonials, loanPrograms, portfolioItems }) {
         <hr></hr>
 
         <section className="contact-homepage">
-          <Contact />
+          <Contact
+            contactForm={contactForm}
+            lang={lang}
+            translations={translations}
+          />
         </section>
       </div>
     </>
