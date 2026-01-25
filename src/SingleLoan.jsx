@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router";
 
-function SingleLoan({ loanPrograms }) {
+function SingleLoan({ loanPrograms, lang, translations }) {
   const { loanId } = useParams();
   const loan = loanPrograms.find((l) => l.loanId === loanId);
   console.log("Found loan:", loan);
@@ -19,14 +19,14 @@ function SingleLoan({ loanPrograms }) {
       <div className="single-loan">
         <h2>{loan.loanName}</h2>
         <img src={loan.icon} alt={loan.loanName} />
-        <p>{loan.description}</p>
+        <p>{loan.description[lang]}</p>
         <p>
           <Link className="form-button" to={url}>
-            Get Started
+            {translations.nav[lang].getStarted}
           </Link>
         </p>
         <Link className=" back-button" to="/loans">
-          Back
+          {translations.about[lang].back}
         </Link>
       </div>
     </>

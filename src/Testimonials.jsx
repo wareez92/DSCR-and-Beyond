@@ -2,16 +2,16 @@ import { Link } from "react-router";
 
 Link;
 
-function Testimonials({ testimonials }) {
+function Testimonials({ translations, testimonials, lang }) {
   return (
     <>
       <div className="testimonials">
-        <h1>Testimonials</h1>
+        <h1>{translations.nav[lang].testimonials}</h1>
         {testimonials.map((t, index) => (
           <div key={index}>
             <p>
               <span className="quotation start">"</span>
-              {t.review}
+              {t.review[lang]}
               <span className="quotation end">"</span>
             </p>
             <p>{"⭐".repeat(t.rating)}</p>

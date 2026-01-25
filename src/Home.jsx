@@ -9,7 +9,10 @@ function Home({
   portfolioItems,
   lang,
   translations,
-  contactForm
+  contactForm,
+  viewDetails,
+  viewAll,
+  dscrText
 }) {
   return (
     <>
@@ -39,23 +42,13 @@ function Home({
         {/* Loan Programs */}
 
         <section className="loan-programs-homepage">
-          <h1>Loan Programs</h1>
+          <h1>{translations.nav[lang].loanPrograms}</h1>
 
           <p>
-            A DSCR (Debt Service Coverage Ratio) loan is a type of real estate
-            loan commonly used by real estate investors, where approval is based
-            on the property's income—not the borrower’s personal income. Instead
-            of tax returns or W-2s, lenders look at the property's cash flow to
-            ensure it can cover the loan payments. Why It's Helpful for
-            Homebuyers or Investors: DSCR loans are especially useful for people
-            who may not qualify for traditional loans due to self-employment,
-            inconsistent income, or a high debt-to-income ratio. They’re ideal
-            for purchasing rental properties, as the focus is on the property's
-            ability to generate income, not your personal finances. This makes
-            DSCR loans a flexible option for growing a real estate portfolio.
+            {dscrText[lang]}
           </p>
           <Link className="loan-program-view-all-homepage" to="/Loans">
-            View All
+           {viewAll[lang]}
           </Link>
         </section>
 
@@ -64,7 +57,7 @@ function Home({
         <hr></hr>
 
         <section className="portfolio-homepage">
-          <h1>Portfolio</h1>
+          <h1>{translations.nav[lang].portfolio}</h1>
 
           <div className="portfolio-container">
             {portfolioItems.map((p, i) => (
@@ -85,13 +78,13 @@ function Home({
         <hr></hr>
 
         <section className="testimonial-homepage">
-          <h1>Testimonials</h1>
+          <h1>{translations.nav[lang].testimonials}</h1>
           <div>
             {testimonials.slice(0, 4).map((t, index) => (
               <div key={index}>
                 <p className="testimonial-quote">
                   <span className="quotation start">"</span>
-                  {t.review}
+                  {t.review[lang]}
                   <span className="quotation end">"</span>
                 </p>
                 <p>{"⭐".repeat(t.rating)}</p>
@@ -101,7 +94,7 @@ function Home({
               </div>
             ))}
           </div>
-          <Link to="/Testimonials">View All</Link>
+          <Link to="/Testimonials">{viewAll[lang]}</Link>
         </section>
 
         {/* Contact */}

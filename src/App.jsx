@@ -21,139 +21,294 @@ function App() {
     {
       name: "Jayne Sigman",
       rating: 5,
-      review:
-        "Sese was amazing! Highly recommend him and Guzzo & Co for any of your purchase needs. Process was smooth and professional and timely. Thank you Sese for helping us get our home!",
+      review: {
+        en: "Sese was amazing! Highly recommend him and Guzzo & Co for any of your purchase needs. Process was smooth, professional, and timely. Thank you Sese for helping us get our home!",
+        fr: "Sese a été formidable ! Je le recommande vivement, ainsi que Guzzo & Co, pour tous vos projets d’achat. Le processus a été fluide, professionnel et rapide. Merci Sese de nous avoir aidés à obtenir notre maison !",
+        es: "¡Sese fue increíble! Lo recomiendo ampliamente, al igual que a Guzzo & Co, para cualquier necesidad de compra. El proceso fue fluido, profesional y puntual. ¡Gracias Sese por ayudarnos a conseguir nuestro hogar!",
+      },
       url: "https://www.google.com/maps/contrib/112556600282988954342/reviews?hl=en-US",
     },
     {
       name: "Betcy Elie",
       rating: 5,
-      review:
-        "I had the pleasure of working with Sese Ntem, Home Lending Advisor, at Guzzo & Co Inc..The saying... third time is a charm... is definitely true for my clients (C & H) who were ready to call it quit until I suggested they take one last chance with Sese. They agree and I am happy to report that my clients closed escrow on February 5, 2025. Yippee! Thanks to Sese and his Senior Processor, Amber Van Assche; my buyers were able to get their loan funded. It was a pleasure working with both of them; I love their professionalism and their great communication (whether by phone, text or email) with both my clients and me. Sese, you assured me that you would deliver.. and yes indeed, you delivered 😊 I look forward to working with both Sese and Amber again, in the near future. Thanks guys; job well done!",
+      review: {
+        en: "I had the pleasure of working with Sese Ntem at Guzzo & Co Inc. After several attempts, my clients finally closed escrow thanks to Sese and his senior processor. Their professionalism, communication, and dedication were outstanding. Job well done!",
+        fr: "J’ai eu le plaisir de travailler avec Sese Ntem chez Guzzo & Co Inc. Après plusieurs tentatives, mes clients ont enfin pu conclure la transaction grâce à Sese et à sa responsable de traitement. Leur professionnalisme, leur communication et leur engagement étaient exceptionnels. Excellent travail !",
+        es: "Tuve el placer de trabajar con Sese Ntem en Guzzo & Co Inc. Después de varios intentos, mis clientes finalmente cerraron la operación gracias a Sese y a su procesadora senior. Su profesionalismo, comunicación y dedicación fueron excepcionales. ¡Excelente trabajo!",
+      },
     },
     {
       name: "Emma E. Recher",
       rating: 5,
-      review:
-        "A powerhouse team for a not-so-easy case... Sese and his loan processor worked tirelessly to make sure everything went as smoothly as possible. Every obstacle raised by the underwriter was swiftly handled by the loan processor, leading to the final result: securing the loan. A company I highly recommend, both for their efficiency and their kindness.",
+      review: {
+        en: "A powerhouse team for a challenging case. Sese and his loan processor worked tirelessly to overcome every obstacle and successfully secure the loan. Highly recommended for both efficiency and kindness.",
+        fr: "Une équipe exceptionnelle pour un dossier complexe. Sese et son équipe ont travaillé sans relâche pour surmonter chaque obstacle et obtenir le financement. Je recommande vivement pour leur efficacité et leur gentillesse.",
+        es: "Un equipo poderoso para un caso complejo. Sese y su procesador de préstamos trabajaron incansablemente para superar cada obstáculo y asegurar el préstamo. Muy recomendados por su eficiencia y amabilidad.",
+      },
       url: "https://www.google.com/maps/contrib/100133890453473952536/reviews?hl=en-US",
     },
     {
       name: "Koru Kan",
       rating: 5,
-      review:
-        "Sese Ntem was a pleasure to work with. He helped us get a good rate, was super responsive (even during evenings and weekends) and helped us through the whole process with time to spare on our rushed closing. I would definitely recommend Sese Ntem and his team.",
+      review: {
+        en: "Sese Ntem was a pleasure to work with. He secured us a great rate, was extremely responsive, and guided us through a fast-paced closing with ease.",
+        fr: "Ce fut un réel plaisir de travailler avec Sese Ntem. Il nous a obtenu un excellent taux, a été très réactif et nous a accompagnés efficacement tout au long d’une clôture rapide.",
+        es: "Fue un placer trabajar con Sese Ntem. Nos consiguió una excelente tasa, fue muy receptivo y nos guió durante todo el proceso de cierre acelerado.",
+      },
       url: "https://www.google.com/maps/contrib/111199029902182787868/reviews?hl=en-US",
     },
     {
       name: "Emmanuelle R",
       rating: 5,
-      review:
-        "A powerhouse team for a not-so-easy case... Sese and his loan processor worked tirelessly to make sure everything went as smoothly as possible. Every obstacle raised by the underwriter was swiftly handled by the loan processor, leading to the final result: securing the loan. A company I highly recommend, both for their efficiency and their kindness",
+      review: {
+        en: "A powerhouse team for a challenging case. Every obstacle was handled efficiently, leading to a successful loan approval. Highly recommended.",
+        fr: "Une équipe remarquable pour un dossier difficile. Chaque obstacle a été géré efficacement, menant à l’approbation du prêt. Je recommande vivement.",
+        es: "Un equipo excepcional para un caso complicado. Cada obstáculo fue manejado eficientemente hasta lograr la aprobación del préstamo. Muy recomendable.",
+      },
     },
     {
       name: "Kokouvi Komlanvi",
       rating: 5,
-      review:
-        "I wanted to take a moment to commend Sese NTEM and Rosa VASQUEZ for their exceptional service during the recent transaction. As a buyer's agent, I found their communication to be clear and timely, making the financing process smooth for my clients. They were responsive to inquiries and provided valuable guidance that eased any concerns. The competitive rates and straightforward terms were also appreciated by my clients. Overall, a great experience that I’d gladly recommend to future buyers!",
+      review: {
+        en: "Exceptional service from Sese Ntem and Rosa Vasquez. Clear communication, responsiveness, and competitive rates made the financing process smooth for my clients.",
+        fr: "Service exceptionnel de la part de Sese Ntem et Rosa Vasquez. Communication claire, grande réactivité et excellents taux — une expérience fluide pour mes clients.",
+        es: "Servicio excepcional de Sese Ntem y Rosa Vasquez. Comunicación clara, gran capacidad de respuesta y tasas competitivas hicieron que el proceso fuera muy fluido.",
+      },
       url: "https://www.google.com/maps/contrib/114346578128320789852/reviews?hl=en-US",
     },
-
     {
       name: "Erika Villasana",
       rating: 5,
-      review:
-        "I had the pleasure of working with SESE NTEM throughout the process of securing a loan for my home. From the start he walked me through every step of the process, answering all my questions and ensuring I understood the terms and requirements. I appreciated how they kept everything on track and ensured that all the necessary paperwork was completed in a timely manner. His commitment to making the process as smooth as possible proactively addressed potential issues, offered solutions, and made sure there were no surprises along the way. The entire process was efficient, and I highly recommend SESE NTEM to anyone looking for a reliable and professional loan processor.",
+      review: {
+        en: "Sese guided me through every step of the loan process with clarity and professionalism. He proactively addressed issues and ensured a smooth, efficient experience.",
+        fr: "Sese m’a accompagnée à chaque étape du processus avec clarté et professionnalisme. Il a anticipé les problèmes et assuré une expérience fluide et efficace.",
+        es: "Sese me guió en cada paso del proceso con claridad y profesionalismo. Abordó los problemas de manera proactiva y aseguró una experiencia eficiente y sin sorpresas.",
+      },
       url: "https://www.google.com/maps/contrib/116384933902042303964/reviews?hl=en-US",
     },
     {
       name: "Estelle Hughes",
       rating: 5,
-      review:
-        "Mister sese is very nice he have patience he knows what is doing in recommend every one to work with him is very nice person when you got mister see on your file it's a blessing I'm telling you guys is the bomb I recommend 💯",
+      review: {
+        en: "Mr. Sese is patient, knowledgeable, and truly a blessing to work with. I highly recommend him.",
+        fr: "Monsieur Sese est patient, compétent et un véritable plaisir à côtoyer. Je le recommande vivement.",
+        es: "El señor Sese es paciente, conocedor y una verdadera bendición para trabajar. Lo recomiendo al 100 %.",
+      },
       url: "https://www.google.com/maps/contrib/109285741726581595620/reviews?hl=en-US",
     },
     {
       name: "Isiah Autry",
       rating: 5,
-      review:
-        "SeSe was amazing. There were many hoops to jump through and several issues arose but SeSe was able to navigate the rough waters and get us to the finish line. I would recommend SeSe to anyone.",
+      review: {
+        en: "There were many challenges, but Sese navigated every issue and got us across the finish line. Highly recommended.",
+        fr: "Malgré de nombreux défis, Sese a su gérer chaque situation et mener le dossier à terme. Je recommande sans hésiter.",
+        es: "Hubo muchos desafíos, pero Sese supo manejarlos todos y llevarnos hasta el final. Muy recomendable.",
+      },
       url: "https://www.google.com/maps/contrib/100870612966951521035/reviews?hl=en-US",
     },
     {
       name: "Kwaku Gamadeku",
       rating: 5,
-      review:
-        "I had a pleasure to work with Sese Ntem with the purchase of my property. Sese was fast, attentive . He went above and beyond to get this loan approved. His dedication for his client is at another level. Day and night , Sese answered my calls if I have questions.. He was very patient and made sure everything falls into places at the right time. He is very knowledgeable at what he does. I will recommend Sese a 5 stars",
+      review: {
+        en: "Sese went above and beyond to get my loan approved. He was attentive, patient, and extremely knowledgeable. Five stars without hesitation.",
+        fr: "Sese est allé bien au-delà de mes attentes pour faire approuver mon prêt. Attentif, patient et très compétent. Cinq étoiles sans hésitation.",
+        es: "Sese hizo mucho más de lo esperado para aprobar mi préstamo. Atento, paciente y muy conocedor. Cinco estrellas sin dudarlo.",
+      },
       url: "https://www.google.com/maps/contrib/110452362169443550525/reviews?hl=en-US",
     },
   ];
+
+  const viewAll = {
+    en: "View All",
+    fr: "Voir tout",
+    es: "Ver todo",
+  };
+
+  const dscrText = {
+    en: `A DSCR (Debt Service Coverage Ratio) loan is a type of real estate loan commonly used by real estate investors, where approval is based on the property's income—not the borrower’s personal income. Instead of tax returns or W-2s, lenders look at the property's cash flow to ensure it can cover the loan payments. Why It's Helpful for Homebuyers or Investors: DSCR loans are especially useful for people who may not qualify for traditional loans due to self-employment, inconsistent income, or a high debt-to-income ratio. They’re ideal for purchasing rental properties, as the focus is on the property's ability to generate income, not your personal finances. This makes DSCR loans a flexible option for growing a real estate portfolio.`,
+    fr: `Un prêt DSCR (Debt Service Coverage Ratio) est un type de prêt immobilier couramment utilisé par les investisseurs immobiliers, dont l’approbation est basée sur les revenus générés par le bien — et non sur les revenus personnels de l’emprunteur. Au lieu des déclarations fiscales ou des formulaires W-2, les prêteurs examinent la trésorerie du bien afin de s’assurer qu’elle peut couvrir les paiements du prêt. Pourquoi c’est utile pour les acheteurs ou investisseurs : les prêts DSCR sont particulièrement adaptés aux personnes qui ne peuvent pas obtenir de prêts traditionnels en raison du travail indépendant, de revenus irréguliers ou d’un ratio d’endettement élevé. Ils sont idéaux pour l’achat de biens locatifs, car l’accent est mis sur la capacité du bien à générer des revenus, et non sur les finances personnelles. Cela fait des prêts DSCR une option flexible pour développer un portefeuille immobilier.`,
+    es: `Un préstamo DSCR (Debt Service Coverage Ratio) es un tipo de préstamo inmobiliario comúnmente utilizado por inversionistas inmobiliarios, en el cual la aprobación se basa en los ingresos generados por la propiedad, y no en los ingresos personales del prestatario. En lugar de declaraciones de impuestos o formularios W-2, los prestamistas evalúan el flujo de efectivo de la propiedad para asegurarse de que pueda cubrir los pagos del préstamo. Por qué es útil para compradores o inversionistas: los préstamos DSCR son especialmente beneficiosos para personas que no califican para préstamos tradicionales debido al trabajo independiente, ingresos irregulares o una alta relación deuda-ingresos. Son ideales para la compra de propiedades de alquiler, ya que el enfoque está en la capacidad de la propiedad para generar ingresos, no en las finanzas personales. Esto convierte a los préstamos DSCR en una opción flexible para hacer crecer un portafolio inmobiliario.`,
+  };
 
   const loanPrograms = [
     {
       loanId: "1",
       loanName: "DSCR 1-4 Unit",
       icon: "/assets/ALT (3).svg",
-      keyFeatures: [
-        "No Personal Income Verification",
-        "Ideal for Real Estate Investors",
-        "Covers 1–4 Unit Properties",
-        "Fast & Streamlined Approval",
-      ],
-      description:
-        "A DSCR (Debt Service Coverage Ratio) loan is designed for real estate investors purchasing or refinancing rental properties with 1–4 units. Instead of relying on personal income, these loans focus on the property’s cash flow to qualify. If the rental income covers the property's monthly debt payments, you may qualify—even without traditional income documentation. DSCR loans offer a flexible, streamlined solution for building your investment portfolio.",
+
+      keyFeatures: {
+        en: [
+          "No Personal Income Verification",
+          "Ideal for Real Estate Investors",
+          "Covers 1–4 Unit Properties",
+          "Fast & Streamlined Approval",
+        ],
+        fr: [
+          "Aucune vérification de revenu personnel",
+          "Idéal pour les investisseurs immobiliers",
+          "Couvre les propriétés de 1 à 4 logements",
+          "Approbation rapide et simplifiée",
+        ],
+        es: [
+          "No se requiere verificación de ingresos personales",
+          "Ideal para inversionistas inmobiliarios",
+          "Cubre propiedades de 1 a 4 unidades",
+          "Aprobación rápida y simplificada",
+        ],
+      },
+
+      description: {
+        en: "A DSCR (Debt Service Coverage Ratio) loan is designed for real estate investors purchasing or refinancing rental properties with 1–4 units. Instead of relying on personal income, these loans focus on the property’s cash flow to qualify. If the rental income covers the property's monthly debt payments, you may qualify—even without traditional income documentation. DSCR loans offer a flexible, streamlined solution for building your investment portfolio.",
+
+        fr: "Un prêt DSCR (Debt Service Coverage Ratio) est conçu pour les investisseurs immobiliers qui achètent ou refinancent des biens locatifs de 1 à 4 logements. Au lieu de se baser sur les revenus personnels, ces prêts évaluent la trésorerie générée par le bien. Si les revenus locatifs couvrent les paiements mensuels, vous pouvez être admissible, même sans documentation traditionnelle. Les prêts DSCR offrent une solution flexible et simplifiée pour développer un portefeuille immobilier.",
+
+        es: "Un préstamo DSCR (Debt Service Coverage Ratio) está diseñado para inversionistas inmobiliarios que compran o refinancian propiedades de alquiler de 1 a 4 unidades. En lugar de basarse en los ingresos personales, estos préstamos evalúan el flujo de efectivo de la propiedad. Si los ingresos de alquiler cubren los pagos mensuales, puede calificar incluso sin documentación tradicional. Los préstamos DSCR ofrecen una solución flexible y simplificada para hacer crecer su portafolio inmobiliario.",
+      },
     },
+
     {
       loanId: "2",
       loanName: "DSCR 5-8 Unit",
       icon: "/assets/ALT (4).svg",
-      keyFeatures: [
-        "Income-Based Qualification",
-        "No Tax Returns or Employment Verification",
-        "Supports Mid-Sized Residential Assets",
-        "Simplified & Efficient Process",
-      ],
-      description:
-        "DSCR (Debt Service Coverage Ratio) loans for 5–8 unit properties are designed for investors looking to finance mid-sized residential properties. These loans rely on the property's rental income to qualify, rather than personal income or tax returns. Whether you're expanding your portfolio or refinancing existing assets, DSCR loans offer a flexible, cash-flow-based solution with a streamlined approval process.",
+
+      keyFeatures: {
+        en: [
+          "Income-Based Qualification",
+          "No Tax Returns or Employment Verification",
+          "Supports Mid-Sized Residential Assets",
+          "Simplified & Efficient Process",
+        ],
+        fr: [
+          "Qualification basé sur les revenus du bien",
+          "Aucune déclaration fiscale ni vérification d’emploi",
+          "Idéal pour les immeubles résidentiels intermédiaires",
+          "Processus simplifié et efficace",
+        ],
+        es: [
+          "Calificación basada en los ingresos de la propiedad",
+          "No se requieren declaraciones de impuestos ni verificación laboral",
+          "Compatible con propiedades residenciales medianas",
+          "Proceso simplificado y eficiente",
+        ],
+      },
+
+      description: {
+        en: "DSCR loans for 5–8 unit properties are designed for investors financing mid-sized residential properties. Qualification is based on rental income rather than personal income or tax returns. These loans offer a flexible, cash-flow-based solution with a streamlined approval process.",
+
+        fr: "Les prêts DSCR pour les propriétés de 5 à 8 logements sont conçus pour les investisseurs souhaitant financer des immeubles résidentiels de taille moyenne. L’admissibilité repose sur les revenus locatifs plutôt que sur les revenus personnels ou les déclarations fiscales. Ces prêts offrent une solution flexible fondée sur la trésorerie du bien.",
+
+        es: "Los préstamos DSCR para propiedades de 5 a 8 unidades están diseñados para inversionistas que financian activos residenciales de tamaño mediano. La calificación se basa en los ingresos de alquiler y no en los ingresos personales ni declaraciones fiscales. Ofrecen una solución flexible basada en el flujo de efectivo.",
+      },
     },
+
     {
       loanId: "3",
       loanName: "DSCR Alt Doc",
       icon: "/assets/ALT (5).svg",
-      keyFeatures: [
-        "Alternative Documentation Accepted",
-        "Ideal for Self-Employed Investors",
-        "Covers 1–4 Unit Properties",
-        "Fast & Flexible Financing",
-      ],
-      description:
-        "DSCR Alt Doc (Alternative Documentation) loans are designed for real estate investors who may not qualify through traditional income documentation. These loans focus on the property's rental income and overall cash flow, not the borrower’s tax returns or employment history. By using alternative forms of documentation, investors can access flexible financing options for both residential and small multifamily properties.",
+
+      keyFeatures: {
+        en: [
+          "Alternative Documentation Accepted",
+          "Ideal for Self-Employed Investors",
+          "Covers 1–4 Unit Properties",
+          "Fast & Flexible Financing",
+        ],
+        fr: [
+          "Documentation alternative acceptée",
+          "Idéal pour les investisseurs indépendants",
+          "Couvre les propriétés de 1 à 4 logements",
+          "Financement rapide et flexible",
+        ],
+        es: [
+          "Se acepta documentación alternativa",
+          "Ideal para inversionistas independientes",
+          "Cubre propiedades de 1 a 4 unidades",
+          "Financiamiento rápido y flexible",
+        ],
+      },
+
+      description: {
+        en: "DSCR Alt Doc loans are designed for investors who may not qualify through traditional income documentation. These loans focus on rental income and overall property cash flow, offering flexible financing options.",
+
+        fr: "Les prêts DSCR Alt Doc sont destinés aux investisseurs qui ne peuvent pas se qualifier avec une documentation traditionnelle. Ces prêts se basent sur les revenus locatifs et la trésorerie globale du bien, offrant des options de financement flexibles.",
+
+        es: "Los préstamos DSCR Alt Doc están diseñados para inversionistas que no califican mediante documentación tradicional. Se basan en los ingresos de alquiler y el flujo de efectivo de la propiedad, ofreciendo opciones de financiamiento flexibles.",
+      },
     },
+
     {
       loanId: "4",
       loanName: "DSCR ITIN",
       icon: "/assets/ALT (6).svg",
-      keyFeatures: [
-        "No Social Security Number Required",
-        "Property Income-Based Qualification",
-        "Supports 1–8 Unit Investment Properties",
-        "Simplified Loan Process",
-      ],
-      description:
-        "DSCR ITIN loans are tailored for real estate investors who do not have a Social Security Number but hold an ITIN (Individual Taxpayer Identification Number). These loans use the property's rental income—not the borrower's personal income—to determine eligibility. With no need for traditional income documentation, DSCR ITIN loans provide a streamlined path to property ownership for non-U.S. citizens investing in 1–8 unit residential properties.",
+
+      keyFeatures: {
+        en: [
+          "No Social Security Number Required",
+          "Property Income-Based Qualification",
+          "Supports 1–8 Unit Investment Properties",
+          "Simplified Loan Process",
+        ],
+        fr: [
+          "Aucun numéro de sécurité sociale requis",
+          "Qualification basé sur les revenus du bien",
+          "Couvre les propriétés d’investissement de 1 à 8 logements",
+          "Processus de prêt simplifié",
+        ],
+        es: [
+          "No se requiere número de Seguro Social",
+          "Calificación basada en ingresos de la propiedad",
+          "Admite propiedades de inversión de 1 a 8 unidades",
+          "Proceso de préstamo simplificado",
+        ],
+      },
+
+      description: {
+        en: "DSCR ITIN loans are designed for investors without a Social Security Number who hold an ITIN. Eligibility is based on rental income rather than personal income, offering a streamlined path to U.S. real estate investing.",
+
+        fr: "Les prêts DSCR ITIN sont conçus pour les investisseurs sans numéro de sécurité sociale disposant d’un ITIN. L’admissibilité repose sur les revenus locatifs plutôt que sur les revenus personnels, offrant un accès simplifié à l’investissement immobilier aux États-Unis.",
+
+        es: "Los préstamos DSCR ITIN están diseñados para inversionistas que no tienen Seguro Social pero cuentan con un ITIN. La elegibilidad se basa en los ingresos de alquiler, ofreciendo un acceso simplificado a la inversión inmobiliaria en EE. UU.",
+      },
     },
+
     {
       loanId: "5",
       loanName: "DSCR Foreign National",
       icon: "/assets/ALT (2).svg",
-      keyFeatures: [
-        "No U.S. Credit History Needed",
-        "Property Income-Based Qualification",
-        "Supports 1–8 Unit Investment Properties",
-        "Tailored for Non-U.S. Residents",
-      ],
-      description:
-        "DSCR Foreign National loans are created for international investors who want to purchase or refinance U.S. rental properties but do not have U.S. residency, citizenship, or credit history. These loans evaluate the property's rental income instead of relying on the borrower's income or tax returns. With simplified documentation requirements, Foreign National loans offer a practical solution for global investors entering the U.S. real estate market.",
+
+      keyFeatures: {
+        en: [
+          "No U.S. Credit History Needed",
+          "Property Income-Based Qualification",
+          "Supports 1–8 Unit Investment Properties",
+          "Tailored for Non-U.S. Residents",
+        ],
+        fr: [
+          "Aucun historique de crédit américain requis",
+          "Qualification basé sur les revenus du bien",
+          "Couvre les propriétés d’investissement de 1 à 8 logements",
+          "Conçu pour les non-résidents américains",
+        ],
+        es: [
+          "No se requiere historial crediticio en EE. UU.",
+          "Calificación basada en ingresos de la propiedad",
+          "Admite propiedades de inversión de 1 a 8 unidades",
+          "Diseñado para inversionistas extranjeros",
+        ],
+      },
+
+      en: {
+        description:  "DSCR Foreign National loans are built for international investors purchasing or refinancing U.S. rental properties. Qualification is based on property income rather than personal income, offering simplified documentation for global investors."
+        },
+
+        fr: {
+        description: "Les prêts DSCR Foreign National sont destinés aux investisseurs internationaux souhaitant acheter ou refinancer des biens locatifs aux États-Unis. L’admissibilité repose sur les revenus du bien, avec une documentation simplifiée."
+        },
+
+        es: {
+        description:  "Los préstamos DSCR para extranjeros están diseñados para inversionistas internacionales que desean comprar o refinanciar propiedades de alquiler en EE. UU. La calificación se basa en los ingresos de la propiedad, con requisitos de documentación simplificados."}
+        ,
+      },
     },
   ];
 
@@ -584,13 +739,18 @@ Agenda una llamada para saber cómo estos préstamos pueden ayudarte a crecer.
               translations={translations}
               lang={lang}
               contactForm={contactForm}
+              viewDetails={viewDetails}
+              viewAll={viewAll}
+              dscrText={dscrText}
             />
           }
         />
         <Route
           path="/loans"
           element={
-            <Loans loanPrograms={loanPrograms} translations={translations} />
+            <Loans loanPrograms={loanPrograms} translations={translations} lang={lang}
+            viewDetails={viewDetails}
+             />
           }
         />
         <Route
@@ -599,6 +759,7 @@ Agenda una llamada para saber cómo estos préstamos pueden ayudarte a crecer.
             <Testimonials
               testimonials={testimonials}
               translations={translations}
+              lang={lang}
             />
           }
         />
