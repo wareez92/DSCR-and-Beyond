@@ -4,15 +4,12 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import useHtmlLang from "./Lang";
 
-function Nav({ lang, setLang, translations}) {
-  
-
+function Nav({ lang, setLang, translations }) {
   useHtmlLang(lang);
 
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
-
 
   useEffect(() => {
     const inExceptionBreakpoint =
@@ -56,6 +53,15 @@ function Nav({ lang, setLang, translations}) {
                 <RxHamburgerMenu className="nav-hamburger-icon" />
               )}
             </button>
+            <select
+              className="nav-lang"
+              value={lang}
+              onChange={(e) => setLang(e.target.value)}
+            >
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
+            </select>
           </div>
           <ul className="nav-menu-items-2">
             <li>
@@ -99,10 +105,14 @@ function Nav({ lang, setLang, translations}) {
             >
               {translations.nav[lang].getStarted}
             </Link>
-            <select value={lang} onChange={(e) => setLang(e.target.value)}>
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="es">Español</option>
+            <select
+              className="nav-lang-2"
+              value={lang}
+              onChange={(e) => setLang(e.target.value)}
+            >
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
             </select>
           </ul>
         </div>

@@ -722,6 +722,10 @@ textarea {
     display: none;
   }
 
+  .nav-lang {
+    display: none;
+  }
+
   .nav-logo {
     margin-bottom: 0.4em;
   }
@@ -1621,6 +1625,7 @@ textarea {
   .articles {
     /* padding-right: 3em;\\ */
   }
+
 }
 
 @media (max-width: 376px) {
@@ -1759,4 +1764,11 @@ textarea {
     padding: 0 6em 0 0;
   }
 
+}
+
+.nav-lang-2, .nav-lang {
+  background-color: var(--third-color);
+  border: transparent, var(--secondary-color), transparent, transparent;
+  color: var(--secondary-color);
+  margin-left: 1em;
 }

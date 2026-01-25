@@ -298,16 +298,18 @@ function App() {
       },
 
       en: {
-        description:  "DSCR Foreign National loans are built for international investors purchasing or refinancing U.S. rental properties. Qualification is based on property income rather than personal income, offering simplified documentation for global investors."
-        },
+        description:
+          "DSCR Foreign National loans are built for international investors purchasing or refinancing U.S. rental properties. Qualification is based on property income rather than personal income, offering simplified documentation for global investors.",
+      },
 
-        fr: {
-        description: "Les prêts DSCR Foreign National sont destinés aux investisseurs internationaux souhaitant acheter ou refinancer des biens locatifs aux États-Unis. L’admissibilité repose sur les revenus du bien, avec une documentation simplifiée."
-        },
+      fr: {
+        description:
+          "Les prêts DSCR Foreign National sont destinés aux investisseurs internationaux souhaitant acheter ou refinancer des biens locatifs aux États-Unis. L’admissibilité repose sur les revenus du bien, avec une documentation simplifiée.",
+      },
 
-        es: {
-        description:  "Los préstamos DSCR para extranjeros están diseñados para inversionistas internacionales que desean comprar o refinanciar propiedades de alquiler en EE. UU. La calificación se basa en los ingresos de la propiedad, con requisitos de documentación simplificados."}
-        ,
+      es: {
+        description:
+          "Los préstamos DSCR para extranjeros están diseñados para inversionistas internacionales que desean comprar o refinanciar propiedades de alquiler en EE. UU. La calificación se basa en los ingresos de la propiedad, con requisitos de documentación simplificados.",
       },
     },
   ];
@@ -748,9 +750,12 @@ Agenda una llamada para saber cómo estos préstamos pueden ayudarte a crecer.
         <Route
           path="/loans"
           element={
-            <Loans loanPrograms={loanPrograms} translations={translations} lang={lang}
-            viewDetails={viewDetails}
-             />
+            <Loans
+              loanPrograms={loanPrograms}
+              translations={translations}
+              lang={lang}
+              viewDetails={viewDetails}
+            />
           }
         />
         <Route
