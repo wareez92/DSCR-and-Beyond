@@ -1770,5 +1770,7 @@ textarea {
   background-color: var(--third-color);
   border: transparent, var(--secondary-color), transparent, transparent;
   color: var(--secondary-color);
-  margin-left: 1em;
+  margin: 0 0 0 2em;
+  padding: 0 1em 0 1em;
 }
+

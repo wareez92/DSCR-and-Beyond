@@ -58,9 +58,9 @@ function Nav({ lang, setLang, translations }) {
               value={lang}
               onChange={(e) => setLang(e.target.value)}
             >
-              <option value="en">EN</option>
-              <option value="fr">FR</option>
-              <option value="es">ES</option>
+              <option className="nav-lang-option" value="en">EN</option>
+              <option className="nav-lang-option" value="fr">FR</option>
+              <option className="nav-lang-option" value="es">ES</option>
             </select>
           </div>
           <ul className="nav-menu-items-2">
@@ -110,9 +110,9 @@ function Nav({ lang, setLang, translations }) {
               value={lang}
               onChange={(e) => setLang(e.target.value)}
             >
-              <option value="en">EN</option>
-              <option value="fr">FR</option>
-              <option value="es">ES</option>
+              <option className="nav-lang-option" value="en">EN</option>
+              <option className="nav-lang-option" value="fr">FR</option>
+              <option className="nav-lang-option" value="es">ES</option>
             </select>
           </ul>
         </div>
