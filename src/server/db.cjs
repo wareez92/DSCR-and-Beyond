@@ -25,16 +25,13 @@ const createTables = async () => {
       portImage VARCHAR(500),
       portImage2 VARCHAR(500),
       portImage3 VARCHAR(500),
+      description_en TEXT,
+      description_fr TEXT,
+      description_es TEXT,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
-    CREATE TABLE portfolio_content (
-      id SERIAL PRIMARY KEY,
-      portfolio_id INTEGER NOT NULL REFERENCES portfolio(id) ON DELETE CASCADE,
-      language VARCHAR(2) NOT NULL,
-      description TEXT NOT NULL,
-      UNIQUE (portfolio_id, language)
-    );
+
   `;
 
   await client.query(SQL);
@@ -58,12 +55,21 @@ const createUser = async ({ username, password, email, isAdmin = false }) => {
   return response.rows[0];
 };
 
-const createPortItem = async ({ portName, portAddress, portImage, portImage2, portImage3 }) => {
-  const SQL =`
-    INSERT INTO portfolio (portName, portAddress, portImage, portImage2, portImage3)
-    VALUES ($1, $2, $3, $4, $5) 
-    RETURING *;
-  `
+const createPortItem = async ({
+  portName,
+  portAddress,
+  portImage,
+  portImage2,
+  portImage3,
+  description_en,
+  description_fr,
+  descritpion_es,
+}) => {
+  const SQL = `
+    INSERT INTO portfolio (portName, portAddress, portImage, portImage2, portImage3, description_en, description_fr, description_es)
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8) 
+    RETURNING *;
+  `;
 
   const response = await client.query(SQL, [
     portName,
@@ -71,10 +77,13 @@ const createPortItem = async ({ portName, portAddress, portImage, portImage2, po
     portImage,
     portImage2,
     portImage3,
+    description_en,
+    description_fr,
+    descritpion_es,
   ]);
 
   return response.rows[0];
-}
+};
 
 // --------- READ --------- //
 
@@ -96,7 +105,7 @@ const fetchPortfolio = async () => {
   const response = await client.query(SQL);
 
   return response.rows;
-}
+};
 
 // --------- EXPORTS --------- //
 
