@@ -53,6 +53,7 @@ function Nav({ lang, setLang, translations }) {
                 <RxHamburgerMenu className="nav-hamburger-icon" />
               )}
             </button>
+          </div>
             <select
               className="nav-lang"
               value={lang}
@@ -62,7 +63,6 @@ function Nav({ lang, setLang, translations }) {
               <option className="nav-lang-option" value="fr">FR</option>
               <option className="nav-lang-option" value="es">ES</option>
             </select>
-          </div>
           <ul className="nav-menu-items-2">
             <li>
               <Link to="/" onClick={toggleMenu}>
